@@ -1,4 +1,4 @@
-# get_vsphere_inventory
+# VMware_scripts
 
 Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
 
