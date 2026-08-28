@@ -1,8 +1,10 @@
 <#
 .SYNOPSIS
     Pulls Windows event log entries for a host within a given time window,
-    useful for investigating a crash/reboot. Queries System and Application
-    logs by default and flags common crash/reboot indicator event IDs.
+    useful for investigating a crash/reboot. Queries System, Application,
+    and the Hyper-V-VMMS-Admin log by default, and flags common
+    crash/reboot indicator event IDs -- including hardware-related ones
+    (WHEA-Logger, disk).
 
 .PARAMETER ComputerName
     FQDN or hostname of the target machine. Prompted for if not supplied.
@@ -18,7 +20,11 @@
     supplied (never pass a plaintext password on the command line).
 
 .PARAMETER LogName
-    Event log(s) to query. Defaults to System and Application.
+    Event log(s) to query. Defaults to System, Application, and (if present
+    on the target) the Hyper-V-VMMS-Admin log. Note: hardware error sources
+    like WHEA-Logger and the "disk" provider already log into the System
+    log, so they don't need a separate LogName -- their event IDs are
+    included in the crash-indicator flagging instead.
 
 .PARAMETER OutputPath
     CSV path for the full, untruncated event dump. Defaults to
@@ -43,7 +49,7 @@ param(
     [System.Management.Automation.PSCredential]$Credential,
 
     [Parameter(Mandatory = $false)]
-    [string[]]$LogName = @('System', 'Application'),
+    [string[]]$LogName = @('System', 'Application', 'Microsoft-Windows-Hyper-V-VMMS-Admin'),
 
     [Parameter(Mandatory = $false)]
     [string]$OutputPath
@@ -51,7 +57,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-# Common crash/reboot indicator event IDs (System log unless noted).
+# Common crash/reboot indicator event IDs. Most providers don't reuse IDs,
+# but a few small numbers (e.g. "1") are reused across unrelated providers,
+# so those are matched as "Id + ProviderName" pairs instead of by Id alone.
 $CrashIndicatorIds = @(
     1001,  # BugCheck (BSOD) - written on next boot
     41,    # Kernel-Power: system rebooted without clean shutdown
@@ -60,7 +68,19 @@ $CrashIndicatorIds = @(
     6005, 6006, 6013,  # Event log service start/stop, uptime
     55,    # Ntfs: volume corruption
     7031, 7034,  # Service Control Manager: service crashed unexpectedly
-    5719   # NETLOGON: lost secure channel to a domain controller
+    5719,  # NETLOGON: lost secure channel to a domain controller
+    11, 51, 153   # disk: disk/controller I/O errors, bad sectors
+)
+
+# WHEA-Logger IDs matched by (Id, ProviderName) since Id 1 collides with
+# other providers (e.g. FilterManager) that have nothing to do with hardware.
+$CrashIndicatorIdProviderPairs = @(
+    @{ Id = 1; ProviderName = 'Microsoft-Windows-WHEA-Logger' },
+    @{ Id = 17; ProviderName = 'Microsoft-Windows-WHEA-Logger' },
+    @{ Id = 18; ProviderName = 'Microsoft-Windows-WHEA-Logger' },
+    @{ Id = 19; ProviderName = 'Microsoft-Windows-WHEA-Logger' },
+    @{ Id = 46; ProviderName = 'Microsoft-Windows-WHEA-Logger' },
+    @{ Id = 47; ProviderName = 'Microsoft-Windows-WHEA-Logger' }
 )
 
 if (-not $ComputerName) {
@@ -98,13 +118,17 @@ $events = Invoke-Command -ComputerName $ComputerName -Credential $Credential -Sc
             } -ErrorAction Stop
         }
         catch [Exception] {
-            if ($_.Exception.Message -notmatch 'No events were found') { throw }
+            if ($_.Exception.Message -notmatch 'No events were found|no such log|does not exist') { throw }
         }
     }
 } |
     Sort-Object TimeCreated |
     Select-Object TimeCreated, LogName, Id, ProviderName, LevelDisplayName, Message,
-        @{N = 'CrashIndicator'; E = { $_.Id -in $CrashIndicatorIds } }
+        @{N = 'CrashIndicator'; E = {
+            $evt = $_
+            [bool](($evt.Id -in $CrashIndicatorIds) -or
+                ($CrashIndicatorIdProviderPairs | Where-Object { $_.Id -eq $evt.Id -and $_.ProviderName -eq $evt.ProviderName }))
+        } }
 
 if (-not $events) {
     Write-Host "No events found in that window." -ForegroundColor Yellow
