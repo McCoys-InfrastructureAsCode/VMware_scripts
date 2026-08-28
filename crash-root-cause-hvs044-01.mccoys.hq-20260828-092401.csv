@@ -1,0 +1,1227 @@
+"TimeCreated","LogName","Id","ProviderName","LevelDisplayName","Message","CrashIndicator"
+"8/27/2026 9:15:31 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 9:15:31 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/27/2026 9:15:32 PM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/27/2026 9:15:32 PM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/27/2026 9:16:02 PM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:02Z. Reason: RulesEngine.","False"
+"8/27/2026 9:16:02 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/27/2026 9:16:33 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 9:31:31 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 9:31:32 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 9:31:32 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 9:33:33 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 9:35:33 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 9:35:33 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 9:52:19 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 9:52:20 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 9:52:20 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 9:54:20 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 9:56:20 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 9:56:20 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 10:11:02 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 10:12:41 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 10:13:52 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:13:52 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:13:52 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:15:31 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 10:15:52 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:16:32 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 10:17:52 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:17:52 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 10:35:04 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:35:05 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:35:05 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:37:05 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:39:05 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:39:05 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 10:53:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:53:58 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:53:58 PM","Application","1023","Microsoft-Windows-Perflib","Error","Windows cannot load the extensible counter DLL ""C:\Windows\System32\perfts.dll"" (Win32 error code The specified module could not be found.).","False"
+"8/27/2026 10:53:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:55:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:57:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:57:59 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:04:14 PM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/27/2026 11:04:14 PM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/27/2026 11:10:08 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:10:09 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:10:09 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:12:09 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:14:06 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/27/2026 11:14:07 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/27/2026 11:14:09 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:14:10 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:15:31 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 11:15:32 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/27/2026 11:15:32 PM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/27/2026 11:15:32 PM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/27/2026 11:16:02 PM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:02Z. Reason: RulesEngine.","False"
+"8/27/2026 11:16:02 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/27/2026 11:16:33 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 11:17:26 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/27/2026 11:25:06 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/27/2026 11:27:45 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:27:46 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:27:46 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:29:46 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:31:46 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:31:47 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:49:29 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:49:30 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:49:30 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:51:30 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:53:30 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:53:30 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:10:34 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:10:34 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:10:34 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:12:35 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:14:22 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/28/2026 12:14:22 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/28/2026 12:14:35 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:14:35 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:15:31 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/28/2026 12:16:24 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/28/2026 12:16:32 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/28/2026 12:19:22 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:28:38 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:28:38 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:28:38 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:30:39 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:32:39 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:32:39 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:53:42 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:53:42 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:53:42 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:55:43 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:57:43 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:57:43 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 1:04:45 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/28/2026 1:05:00 AM","System","1014","Microsoft-Windows-DNS-Client","Warning","Name resolution for the name mccoys-zs2.cloud.tanium.com timed out after none of the configured DNS servers responded. Client PID 4068.","False"
+"8/28/2026 1:05:09 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 1:05:41 AM","System","5719","NETLOGON","Error","This computer was not able to set up a secure session with a domain controller in domain DOMAIN1 due to the following: 
+We can't sign you in with this credential because your domain isn't available. Make sure your device is connected to your organization's network and try again. If you previously signed in on this device with another credential, you can sign in with that credential. 
+This may lead to authentication problems. Make sure that this computer is connected to the network. If the problem persists, please contact your domain administrator.  
+
+ADDITIONAL INFO 
+If this computer is a domain controller for the specified domain, it sets up the secure session to the primary domain controller emulator in the specified domain. Otherwise, this computer sets up the secure session to any domain controller in the specified domain.","True"
+"8/28/2026 1:05:53 AM","System","1054","Microsoft-Windows-GroupPolicy","Error","The processing of Group Policy failed. Windows could not obtain the name of a domain controller. This could be caused by a name resolution failure. Verify your Domain Name System (DNS) is configured and working correctly.","False"
+"8/28/2026 1:05:53 AM","System","1500","Microsoft-Windows-GroupPolicy","Information","The Group Policy settings for the computer were processed successfully. There were no changes detected since the last successful processing of Group Policy.","False"
+"8/28/2026 1:15:31 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/28/2026 1:15:32 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 1:15:32 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 1:15:32 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 1:16:02 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:02Z. Reason: RulesEngine.","False"
+"8/28/2026 1:16:02 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 1:16:32 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/28/2026 1:19:32 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/28/2026 1:19:32 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/28/2026 1:19:33 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 1:19:33 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 1:19:33 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 1:19:33 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/28/2026 1:20:04 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:04Z. Reason: RulesEngine.","False"
+"8/28/2026 1:20:04 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 1:20:10 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/28/2026 1:20:10 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/28/2026 1:24:34 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/28/2026 7:11:32 AM","System","12","Microsoft-Windows-Kernel-General","Information","The operating system started at system time ?2026?-?08?-?28T12:11:32.500000000Z.","False"
+"8/28/2026 7:11:32 AM","System","25","Microsoft-Windows-Kernel-General","Information","The system time was initialized to ?2026?-?08?-?28T12:11:32.500000000Z. 
+
+Loader time: ?2026?-?08?-?28T13:11:30.000000000Z
+Internal boot flags: 0x3
+HAL RTC error code: 0x0
+RTC time is in UTC: false
+Soft boot: false
+Success: true
+Phase: 0","False"
+"8/28/2026 7:11:32 AM","System","153","Microsoft-Windows-Kernel-Boot","Information","Virtualization-based security (policies: VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) is enabled due to HyperV.","True"
+"8/28/2026 7:11:32 AM","System","18","Microsoft-Windows-Kernel-Boot","Information","There are 0x1 boot options on this system.","False"
+"8/28/2026 7:11:32 AM","System","32","Microsoft-Windows-Kernel-Boot","Information","The bootmgr spent 0 ms waiting for user input.","False"
+"8/28/2026 7:11:32 AM","System","20","Microsoft-Windows-Kernel-Boot","Information","The last shutdown's success status was false. The last boot's success status was true.","False"
+"8/28/2026 7:11:32 AM","System","247","Microsoft-Windows-Kernel-Boot","Information","Unable to load Pluton-Windows firmware. StatusCode: STATUS_SUCCESS, Reason: Failed to apply firmware.","False"
+"8/28/2026 7:11:32 AM","System","238","Microsoft-Windows-Kernel-Boot","Information","EFI time zone bias: 360. Daylight flags: 0. Firmware time: ?2026?-?08?-?28T13:11:30.000000000Z.","False"
+"8/28/2026 7:11:32 AM","System","25","Microsoft-Windows-Kernel-Boot","Information","The boot menu policy was 0x0.","False"
+"8/28/2026 7:11:32 AM","System","27","Microsoft-Windows-Kernel-Boot","Information","The boot type was 0x0.","False"
+"8/28/2026 7:11:32 AM","System","1","Microsoft-Windows-Hyper-V-Hypervisor","Information","Hypervisor successfully started.","False"
+"8/28/2026 7:11:32 AM","System","2","Microsoft-Windows-Hyper-V-Hypervisor","Information","Hypervisor scheduler type is 0x1.","False"
+"8/28/2026 7:11:32 AM","System","129","Microsoft-Windows-Hyper-V-Hypervisor","Information","Hypervisor initialized I/O remapping.
+
+Hardware present: true
+Hardware enabled: true
+Policy: 0x0
+Enabled features: 0x47
+Internal information: 0x0
+Problems: 0x0
+Additional information: 0x0","False"
+"8/28/2026 7:11:32 AM","System","156","Microsoft-Windows-Hyper-V-Hypervisor","Information","Hypervisor configured mitigations for CVE-2018-3646 for virtual machines.
+
+Processor not affected: true
+Processor family not affected: false
+Processor supports cache flush: true
+HyperThreading enabled: false
+Parent hypervisor applies mitigations: false
+Mitigations disabled by bcdedit: false
+Mitigations enabled: true
+Cache flush needed: false
+","False"
+"8/28/2026 7:11:32 AM","System","165","Microsoft-Windows-Hyper-V-Hypervisor","Information","Hypervisor configured mitigations for CVE-2019-11091, CVE-2018-12126, CVE-2018-12127, CVE-2018-12130 for virtual machines.
+
+Processor not affected: true
+Processor family not affected: false
+Processor supports microarchitectural buffer flush: true
+Buffer flush needed: false
+","False"
+"8/28/2026 7:11:32 AM","System","3","Microsoft-Windows-IsolatedUserMode","Information","Secure Kernel started with status STATUS_SUCCESS and flags 115744.","False"
+"8/28/2026 7:11:32 AM","System","20","Microsoft-Windows-Kernel-General","Information","The leap second configuration has been updated.
+Reason: Leap second data initialized from registry during boot
+Leap seconds enabled: true
+New leap second count: 0
+Old leap second count: 0","False"
+"8/28/2026 7:11:32 AM","System","16","Microsoft-Windows-HAL","Information","IOMMU fault reporting has been initialized.","False"
+"8/28/2026 7:11:33 AM","System","44800","ItSas35i","Information",,"False"
+"8/28/2026 7:11:34 AM","System","44800","ItSas35i","Information",,"False"
+"8/28/2026 7:11:34 AM","System","44800","ItSas35i","Information",,"False"
+"8/28/2026 7:11:34 AM","System","44800","ItSas35i","Information",,"False"
+"8/28/2026 7:11:34 AM","System","44800","ItSas35i","Information",,"False"
+"8/28/2026 7:11:34 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'Wof' (10.0, ?2085?-?04?-?12T10:26:56.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:34 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'WdFilter' (10.0, ?2039?-?08?-?18T16:32:16.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:34 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'TaniumRecorderDrv' (0.0, ?2026?-?08?-?13T23:59:34.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:35 AM","System","98","Microsoft-Windows-Ntfs","Information","Volume C: (\Device\HarddiskVolume4) is healthy.  No action is needed.","False"
+"8/28/2026 7:11:36 AM","System","161","volmgr","Error","Dump file creation failed due to error during dump creation. BugCheckProgress was: 0x00000052","False"
+"8/28/2026 7:11:36 AM","System","161","volmgr","Error","Dump file creation failed due to error during dump creation. BugCheckProgress was: 000000000100000000000000A10004C00000000004001AC000000000000000000000000000000000","False"
+"8/28/2026 7:11:36 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'npsvctrig' (10.0, ?1978?-?05?-?14T04:13:30.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:37 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \SystemRoot\System32\Config\SAM was cleared updating 88 keys and creating 9 modified pages.","False"
+"8/28/2026 7:11:37 AM","System","41","Microsoft-Windows-Kernel-Power","Critical","The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.","True"
+"8/28/2026 7:11:37 AM","System","172","Microsoft-Windows-Kernel-Power","Information","Connectivity state in standby: Disconnected, Reason: NIC compliance","False"
+"8/28/2026 7:11:37 AM","System","277","Microsoft-Windows-Hyper-V-VmSwitch","Information","vmswitch.sys build 26100.amd64.lt_release_svc_prod1, debug false, official true, 1 1","False"
+"8/28/2026 7:11:37 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:11:37 AM","System","67","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC create","False"
+"8/28/2026 7:11:37 AM","System","233","Microsoft-Windows-Hyper-V-VmSwitch","Information","The operation 'Create' succeeded on nic C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch), Instance Id {00000000-0000-0000-0000-000000000000}.","False"
+"8/28/2026 7:11:37 AM","System","232","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) successfully connected to port C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","9","Microsoft-Windows-Hyper-V-VmSwitch","Information","Switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) successfully initialized.","False"
+"8/28/2026 7:11:37 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:11:37 AM","System","67","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","264","Microsoft-Windows-Hyper-V-VmSwitch","Information","Internal or External Port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port E952133E-6250-41C5-99A3-A6B0EDD0943E (Friendly Name: hvs_Switch) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:11:37 AM","System","264","Microsoft-Windows-Hyper-V-VmSwitch","Information","Internal or External Port E952133E-6250-41C5-99A3-A6B0EDD0943E (Friendly Name: hvs_Switch) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:11:37 AM","System","67","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC create","False"
+"8/28/2026 7:11:37 AM","System","233","Microsoft-Windows-Hyper-V-VmSwitch","Information","The operation 'Create' succeeded on nic 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch), Instance Id {00000000-0000-0000-0000-000000000000}.","False"
+"8/28/2026 7:11:37 AM","System","232","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch) successfully connected to port E952133E-6250-41C5-99A3-A6B0EDD0943E (Friendly Name: hvs_Switch) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:37 AM","System","5","Microsoft-Windows-Hyper-V-VmSwitch","Information","Miniport NIC 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch) successfully enabled","False"
+"8/28/2026 7:11:37 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \SystemRoot\System32\Config\DEFAULT was cleared updating 286 keys and creating 44 modified pages.","False"
+"8/28/2026 7:11:37 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \SystemRoot\System32\Config\SECURITY was cleared updating 113 keys and creating 4 modified pages.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #2: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #4: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #5: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #6: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #3: Driver initialized successfully.","False"
+"8/28/2026 7:11:38 AM","System","15","Microsoft-Windows-Kernel-General","Information","Hive \SystemRoot\System32\Config\SOFTWARE was reorganized with a starting size of 55332864 bytes and an ending size of 47099904 bytes.","False"
+"8/28/2026 7:11:39 AM","System","98","Microsoft-Windows-Ntfs","Information","Volume E: (\Device\HarddiskVolume6) is healthy.  No action is needed.","False"
+"8/28/2026 7:11:39 AM","System","55","Microsoft-Windows-Kernel-Processor-Power","Information","Processor 0 in group 0 exposes the following power management capabilities:
+
+Idle state type: ACPI Idle (C) States (1 state(s))
+
+Performance state type: None
+Nominal Frequency (MHz): 2803
+Maximum performance percentage: 100
+Minimum performance percentage: 100
+Minimum throttle percentage: 100","True"
+"8/28/2026 7:11:39 AM","System","55","Microsoft-Windows-Kernel-Processor-Power","Information","Processor 1 in group 0 exposes the following power management capabilities:
+
+Idle state type: ACPI Idle (C) States (1 state(s))
+
+Performance state type: None
+Nominal Frequency (MHz): 2803
+Maximum performance percentage: 100
+Minimum performance percentage: 100
+Minimum throttle percentage: 100","True"
+"8/28/2026 7:11:39 AM","System","55","Microsoft-Windows-Kernel-Processor-Power","Information","Processor 2 in group 0 exposes the following power management capabilities:
+
+Idle state type: ACPI Idle (C) States (1 state(s))
+
+Performance state type: None
+Nominal Frequency (MHz): 2803
+Maximum performance percentage: 100
+Minimum performance percentage: 100
+Minimum throttle percentage: 100","True"
+"8/28/2026 7:11:39 AM","System","55","Microsoft-Windows-Kernel-Processor-Power","Information","Processor 3 in group 0 exposes the following power management capabilities:
+
+Idle state type: ACPI Idle (C) States (1 state(s))
+
+Performance state type: None
+Nominal Frequency (MHz): 2803
+Maximum performance percentage: 100
+Minimum performance percentage: 100
+Minimum throttle percentage: 100","True"
+"8/28/2026 7:11:39 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC start","False"
+"8/28/2026 7:11:39 AM","System","7","Microsoft-Windows-Hyper-V-VmSwitch","Information","Miniport NIC 743E7653-F237-40D3-BA4E-DC754691F744 (Friendly Name: hvs_Switch) successfully initialized.","False"
+"8/28/2026 7:11:39 AM","System","206","Microsoft-Windows-Hyper-V-VmSwitch","Information","Initialization of switch embedded team succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). Teaming Mode: Static. Load Balancing Algorithm: Address Hash. VmqSumOfQueues: false","False"
+"8/28/2026 7:11:39 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: ) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC create","False"
+"8/28/2026 7:11:39 AM","System","233","Microsoft-Windows-Hyper-V-VmSwitch","Information","The operation 'Create' succeeded on nic /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: ), Instance Id {00000000-0000-0000-0000-000000000000}.","False"
+"8/28/2026 7:11:39 AM","System","191","Microsoft-Windows-Hyper-V-VmSwitch","Information","Successfully updated NIC NDIS QoS with Miniport NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2)","False"
+"8/28/2026 7:11:39 AM","System","298","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC Switch appears to be not supported on the first member adapter /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2) NicIndex: 0 on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) EmbeddedTeaming: true  status = The request is not supported.. Consequently, NIC Switch/VMQ offloads will be entirely disabled on that Team and vSwitch. Please investigate as it can cause performance issues.","False"
+"8/28/2026 7:11:39 AM","System","232","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2) successfully connected to port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","301","Microsoft-Windows-Hyper-V-VmSwitch","Information","Processing NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES status indication: new NumTotalMacAddresses = 0, previous NumTotalMacAddresses = 4, new MaxNumVFs = 0, previous MaxNumVFs = 0, DefaultNicSwitchCreated = false, NicState = 1.","False"
+"8/28/2026 7:11:39 AM","System","212","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC was successfully added to the switch embedded team. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). NIC Name: {68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2). NicIndex: 1","False"
+"8/28/2026 7:11:39 AM","System","212","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC was successfully added to the switch embedded team. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). NIC Name: {68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2). NicIndex: 1","False"
+"8/28/2026 7:11:39 AM","System","301","Microsoft-Windows-Hyper-V-VmSwitch","Information","Processing NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES status indication: new NumTotalMacAddresses = 0, previous NumTotalMacAddresses = 4, new MaxNumVFs = 0, previous MaxNumVFs = 0, DefaultNicSwitchCreated = false, NicState = 1.","False"
+"8/28/2026 7:11:39 AM","System","206","Microsoft-Windows-Hyper-V-VmSwitch","Information","Initialization of switch embedded team succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). Teaming Mode: Switch Independent. Load Balancing Algorithm: Dynamic. VmqSumOfQueues: true","False"
+"8/28/2026 7:11:39 AM","System","17","Microsoft-Windows-Hyper-V-VmSwitch","Information","Protocol NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2) successfully bound to port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:39 AM","System","193","Microsoft-Windows-Hyper-V-VmSwitch","Information","Team NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2) has consistent consolidated NDIS QoS settings.","False"
+"8/28/2026 7:11:39 AM","System","24","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #2) is no longer operational.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","266","Microsoft-Windows-Hyper-V-VmSwitch","Information","Traffic flow has been restarted on external NIC Broadcom NetXtreme Gigabit Ethernet #2 of switch hvs_Switch.","False"
+"8/28/2026 7:11:39 AM","System","191","Microsoft-Windows-Hyper-V-VmSwitch","Information","Successfully updated NIC NDIS QoS with Miniport NIC /DEVICE/{31E8B6C0-7369-4EE2-9F64-189792252771} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #4)","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","212","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC was successfully added to the switch embedded team. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). NIC Name: {31E8B6C0-7369-4EE2-9F64-189792252771} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #4). NicIndex: 2","False"
+"8/28/2026 7:11:39 AM","System","17","Microsoft-Windows-Hyper-V-VmSwitch","Information","Protocol NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #4) successfully bound to port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:39 AM","System","193","Microsoft-Windows-Hyper-V-VmSwitch","Information","Team NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #4) has consistent consolidated NDIS QoS settings.","False"
+"8/28/2026 7:11:39 AM","System","24","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #4) is no longer operational.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","266","Microsoft-Windows-Hyper-V-VmSwitch","Information","Traffic flow has been restarted on external NIC Broadcom NetXtreme Gigabit Ethernet #4 of switch hvs_Switch.","False"
+"8/28/2026 7:11:39 AM","System","191","Microsoft-Windows-Hyper-V-VmSwitch","Information","Successfully updated NIC NDIS QoS with Miniport NIC /DEVICE/{F15147A6-7072-40AA-8A87-F45A03697ADB} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #5)","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","212","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC was successfully added to the switch embedded team. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). NIC Name: {F15147A6-7072-40AA-8A87-F45A03697ADB} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #5). NicIndex: 3","False"
+"8/28/2026 7:11:39 AM","System","17","Microsoft-Windows-Hyper-V-VmSwitch","Information","Protocol NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #5) successfully bound to port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:39 AM","System","193","Microsoft-Windows-Hyper-V-VmSwitch","Information","Team NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #5) has consistent consolidated NDIS QoS settings.","False"
+"8/28/2026 7:11:39 AM","System","24","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #5) is no longer operational.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","266","Microsoft-Windows-Hyper-V-VmSwitch","Information","Traffic flow has been restarted on external NIC Broadcom NetXtreme Gigabit Ethernet #5 of switch hvs_Switch.","False"
+"8/28/2026 7:11:39 AM","System","191","Microsoft-Windows-Hyper-V-VmSwitch","Information","Successfully updated NIC NDIS QoS with Miniport NIC /DEVICE/{CB497AB7-493A-427B-88C8-E7DFE963C619} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6)","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","212","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC was successfully added to the switch embedded team. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch). NIC Name: {CB497AB7-493A-427B-88C8-E7DFE963C619} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6). NicIndex: 4","False"
+"8/28/2026 7:11:39 AM","System","17","Microsoft-Windows-Hyper-V-VmSwitch","Information","Protocol NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6) successfully bound to port D8979BA6-BEC6-42F8-B7C3-01047B879DCB (Friendly Name: hvs_Switch_External) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:11:39 AM","System","193","Microsoft-Windows-Hyper-V-VmSwitch","Information","Team NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6) has consistent consolidated NDIS QoS settings.","False"
+"8/28/2026 7:11:39 AM","System","24","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6) is no longer operational.","False"
+"8/28/2026 7:11:39 AM","System","230","Microsoft-Windows-Hyper-V-VmSwitch","Information","Syncing TCP offloads for switch embedded teaming succeeded. SwitchName C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch) NvgreEnabled - false VxLanEnabled - false.","False"
+"8/28/2026 7:11:39 AM","System","266","Microsoft-Windows-Hyper-V-VmSwitch","Information","Traffic flow has been restarted on external NIC Broadcom NetXtreme Gigabit Ethernet #6 of switch hvs_Switch.","False"
+"8/28/2026 7:11:41 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \Device\HarddiskVolume1\EFI\Microsoft\Boot\BCD was cleared updating 53 keys and creating 4 modified pages.","False"
+"8/28/2026 7:11:41 AM","System","98","Microsoft-Windows-Ntfs","Information","Volume D: (\Device\HarddiskVolume5) is healthy.  No action is needed.","False"
+"8/28/2026 7:11:42 AM","System","11","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #2: Network controller configured for 1Gb full-duplex link.","True"
+"8/28/2026 7:11:42 AM","System","301","Microsoft-Windows-Hyper-V-VmSwitch","Information","Processing NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES status indication: new NumTotalMacAddresses = 4, previous NumTotalMacAddresses = 16, new MaxNumVFs = 0, previous MaxNumVFs = 0, DefaultNicSwitchCreated = false, NicState = 1.","False"
+"8/28/2026 7:11:42 AM","System","21","Microsoft-Windows-Hyper-V-VmSwitch","Information","Media connected on NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6).","False"
+"8/28/2026 7:11:42 AM","System","23","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6) is now operational.","False"
+"8/28/2026 7:11:42 AM","System","11","b57nd60a","Information","Broadcom NetXtreme Gigabit Ethernet #5: Network controller configured for 1Gb full-duplex link.","True"
+"8/28/2026 7:11:42 AM","System","23","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC /DEVICE/{68458616-69FB-40B7-B0C3-DF39610C6494} (Friendly Name: Broadcom NetXtreme Gigabit Ethernet #6) is now operational.","False"
+"8/28/2026 7:11:42 AM","System","4","b57nd60a","Warning","Broadcom NetXtreme Gigabit Ethernet #4: The network link is down.  Check to make sure the network cable is properly connected.","False"
+"8/28/2026 7:11:42 AM","System","4","b57nd60a","Warning","Broadcom NetXtreme Gigabit Ethernet #6: The network link is down.  Check to make sure the network cable is properly connected.","False"
+"8/28/2026 7:11:42 AM","System","4","b57nd60a","Warning","Broadcom NetXtreme Gigabit Ethernet: The network link is down.  Check to make sure the network cable is properly connected.","False"
+"8/28/2026 7:11:42 AM","System","4","b57nd60a","Warning","Broadcom NetXtreme Gigabit Ethernet #3: The network link is down.  Check to make sure the network cable is properly connected.","False"
+"8/28/2026 7:11:42 AM","System","98","Microsoft-Windows-Ntfs","Information","Volume \\?\Volume{7b3917f2-7b2d-40e8-b2e3-b0102899071e} (\Device\HarddiskVolume3) is healthy.  No action is needed.","False"
+"8/28/2026 7:11:43 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \Device\HarddiskVolume1\EFI\Microsoft\Boot\BCD was cleared updating 53 keys and creating 4 modified pages.","False"
+"8/28/2026 7:11:43 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \Device\HarddiskVolume1\EFI\Microsoft\Boot\BCD was cleared updating 53 keys and creating 4 modified pages.","False"
+"8/28/2026 7:11:44 AM","System","24","Microsoft-Windows-Kernel-General","Information","The time zone information was refreshed with exit reason 0. Current time zone bias is 300.","False"
+"8/28/2026 7:11:44 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \Device\HarddiskVolume1\EFI\Microsoft\Boot\BCD was cleared updating 53 keys and creating 4 modified pages.","False"
+"8/28/2026 7:11:46 AM","System","19","Microsoft-Windows-Wininit","Information","Virtualization Based Security new timer creation status
+
+HRESULT: The operation completed successfully.
+New latch timer needed: false
+New latch timer waiting for system update completion: false
+Previous latch timer exists but disabled by registry: false
+Policy file exists: false
+","False"
+"8/28/2026 7:11:46 AM","System","24","Microsoft-Windows-Wininit","Information","Boot App Anti-Rollback: Timer start completed with status:
+
+Win32Error: 0
+Start time: ?2026?-?07?-?19T03:06:00.134130300Z
+Grace period: 51840000000000
+Due time: ?2026?-?09?-?17T03:06:00.134130300Z
+","False"
+"8/28/2026 7:11:46 AM","System","25","Microsoft-Windows-Wininit","Information","Boot App Anti-Rollback: Previous timer resumed with status:
+
+HRESULT: The operation completed successfully.
+Previous timer present: true
+Start time: ?2026?-?07?-?19T03:06:00.134130300Z
+Grace period: 51840000000000
+Attempted recovery enforcement succeeded: false
+","False"
+"8/28/2026 7:11:46 AM","System","23","Microsoft-Windows-Wininit","Information","Boot App Anti-Rollback: Initialize Completed with status:
+HRESULT: The operation completed successfully.
+New timer needed: false
+New timer waiting for system update completion: false
+Previous latch timer exists but disabled by registry: false
+","False"
+"8/28/2026 7:11:47 AM","System","14","Microsoft-Windows-Wininit","Information","Credential Guard configuration:
+
+Registry Configuration: 0x2
+Test Configuration: 0
+Auto Enablement: 1","False"
+"8/28/2026 7:11:47 AM","System","5","Microsoft-Windows-IsolatedUserMode","Information","Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS.","False"
+"8/28/2026 7:11:47 AM","System","1","Microsoft-Windows-IsolatedUserMode","Information","Secure Trustlet \??\C:\WINDOWS\system32\lsaiso.exe Id 1 and Pid 972 started with status STATUS_SUCCESS.","False"
+"8/28/2026 7:11:47 AM","System","18","Microsoft-Windows-Wininit","Information","VBS Key Isolation was started and will protect VSM-isolated keys.","False"
+"8/28/2026 7:11:47 AM","System","13","Microsoft-Windows-Wininit","Information","Credential Guard was started and will protect LSA credentials.","False"
+"8/28/2026 7:11:48 AM","System","6156","LsaSrv","Information","Credential Guard auto enablement status.
+
+Hardware Requirements for Virtualization Based Security:	0
+Domain Joined:	1
+Azure AD Joined:	0
+ Licensed for Credential Guard:	1
+Domain Controller:	0","False"
+"8/28/2026 7:11:49 AM","System","16962","Microsoft-Windows-Directory-Services-SAM","Information","Remote calls to the SAM database are being restricted using the default security descriptor: O:SYG:SYD:(A;;RC;;;BA).
+For more information please see http://go.microsoft.com/fwlink/?LinkId=787651.","False"
+"8/28/2026 7:11:49 AM","System","16977","Microsoft-Windows-Directory-Services-SAM","Information","The domain is configured with the following minimum password length-related settings.
+
+MinimumPasswordLength: 14
+
+RelaxMinimumPasswordLengthLimits: 0
+
+MinimumPasswordLengthAudit: -1
+
+For more information see https://go.microsoft.com/fwlink/?LinkId=2097191.
+","False"
+"8/28/2026 7:11:49 AM","System","16983","Microsoft-Windows-Directory-Services-SAM","Information","The security account manager is now logging periodic summary events for remote clients that call legacy password change or set RPC methods.
+
+For more information please see https://go.microsoft.com/fwlink/?linkid=2150956.
+","False"
+"8/28/2026 7:11:49 AM","System","16993","Microsoft-Windows-Directory-Services-SAM","Information","The security account manager successfully initialized the Local Administrator Password Solution (LAPS) extension dll.
+","False"
+"8/28/2026 7:11:49 AM","System","7036","Service Control Manager","Information","The PlugPlay service entered the running state.","False"
+"8/28/2026 7:11:49 AM","System","7036","Service Control Manager","Information","The Power service entered the running state.","False"
+"8/28/2026 7:11:49 AM","System","7036","Service Control Manager","Information","The DcomLaunch service entered the running state.","False"
+"8/28/2026 7:11:49 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\C:\WINDOWS\ServiceProfiles\NetworkService\NTUSER.DAT was cleared updating 194 keys and creating 15 modified pages.","False"
+"8/28/2026 7:11:50 AM","System","7036","Service Control Manager","Information","The RpcEptMapper service entered the running state.","False"
+"8/28/2026 7:11:50 AM","System","7036","Service Control Manager","Information","The RpcSs service entered the running state.","False"
+"8/28/2026 7:11:50 AM","System","7036","Service Control Manager","Information","The LSM service entered the running state.","False"
+"8/28/2026 7:11:50 AM","System","7036","Service Control Manager","Information","The SystemEventsBroker service entered the running state.","False"
+"8/28/2026 7:11:50 AM","System","7036","Service Control Manager","Information","The HvHost service entered the running state.","False"
+"8/28/2026 7:11:51 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'wcifs' (10.0, ?2027?-?01?-?01T01:25:37.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:51 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'UnionFS' (10.0, ?2029?-?05?-?02T16:57:52.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:51 AM","System","7036","Service Control Manager","Information","The TermService service entered the running state.","False"
+"8/28/2026 7:11:51 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'storqosflt' (10.0, ?2021?-?03?-?19T05:47:34.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:51 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\C:\WINDOWS\ServiceProfiles\LocalService\NTUSER.DAT was cleared updating 132 keys and creating 13 modified pages.","False"
+"8/28/2026 7:11:51 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'bindflt' (10.0, ?2062?-?02?-?21T18:52:39.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:11:51 AM","System","7036","Service Control Manager","Information","The Winmgmt service entered the running state.","False"
+"8/28/2026 7:11:51 AM","Application","5615","Microsoft-Windows-WMI","Information","Windows Management Instrumentation Service started sucessfully","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The UmRdpService service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The CertPropSvc service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The nsi service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The lmhosts service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","50036","Microsoft-Windows-Dhcp-Client","Information","DHCPv4 client service is started","False"
+"8/28/2026 7:11:53 AM","System","50103","Microsoft-Windows-Dhcp-Client","Information","DHCPv4 client registered for shutdown notification","False"
+"8/28/2026 7:11:53 AM","System","50036","Microsoft-Windows-Dhcp-Client","Information","DHCPv4 client service is started","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The LanmanWorkstation service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The SessionEnv service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The gpsvc service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The Dnscache service entered the running state.","False"
+"8/28/2026 7:11:53 AM","System","51046","Microsoft-Windows-DHCPv6-Client","Information","DHCPv6 client service is started","False"
+"8/28/2026 7:11:53 AM","System","7036","Service Control Manager","Information","The Dhcp service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The vmms service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The EventSystem service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The SamSs service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The SENS service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The ProfSvc service entered the running state.","False"
+"8/28/2026 7:11:54 AM","Application","1531","Microsoft-Windows-User Profiles Service","Information","The User Profile Service has started successfully.  
+
+","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The TimeBrokerSvc service entered the running state.","False"
+"8/28/2026 7:11:54 AM","System","7036","Service Control Manager","Information","The Schedule service entered the running state.","False"
+"8/28/2026 7:11:55 AM","System","7036","Service Control Manager","Information","The BFE service entered the running state.","False"
+"8/28/2026 7:11:55 AM","System","7036","Service Control Manager","Information","The WinHttpAutoProxySvc service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The CoreMessagingRegistrar service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The sacsvr service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The Netlogon service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL http://*:5357/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL http://+:80/Temporary_Listen_Addresses/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL https://*:5358/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL https://+:5986/wsman/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL http://+:47001/wsman/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL http://+:5985/wsman/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL https://+:3392/rdp/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL http://+:3387/rdp/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","112","Microsoft-Windows-HttpService","Information","Attempted to reserve URL https://+:443/sra_{BA195980-CD49-458b-9E23-C84EE0ADCD75}/. Status 0x0. Process Id 0x4 Executable path , User S-1-5-18","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The RemoteRegistry service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The SysMain service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The DispBrokerDesktopSvc service entered the running state.","False"
+"8/28/2026 7:11:56 AM","System","7036","Service Control Manager","Information","The CryptSvc service entered the running state.","False"
+"8/28/2026 7:11:57 AM","System","7036","Service Control Manager","Information","The IKEEXT service entered the running state.","False"
+"8/28/2026 7:11:57 AM","System","7036","Service Control Manager","Information","The mpssvc service entered the running state.","False"
+"8/28/2026 7:11:57 AM","System","7036","Service Control Manager","Information","The iphlpsvc service entered the running state.","False"
+"8/28/2026 7:11:57 AM","System","7036","Service Control Manager","Information","The NcaSvc service entered the stopped state.","False"
+"8/28/2026 7:11:57 AM","System","7036","Service Control Manager","Information","The TaniumDriverSvc service entered the running state.","False"
+"8/28/2026 7:11:58 AM","System","7036","Service Control Manager","Information","The netprofm service entered the running state.","False"
+"8/28/2026 7:11:58 AM","System","7036","Service Control Manager","Information","The UserManager service entered the running state.","False"
+"8/28/2026 7:11:58 AM","System","7036","Service Control Manager","Information","The LanmanServer service entered the running state.","False"
+"8/28/2026 7:11:58 AM","System","113","Microsoft-Windows-HttpService","Information","Attempted to add URL (http://+:47001/wsman/) to URL group (0xFE00000320000001). Status: 0x0. Process Id 0xB18 Executable path \Device\HarddiskVolume4\Windows\System32\svchost.exe, User S-1-5-20","False"
+"8/28/2026 7:11:58 AM","System","113","Microsoft-Windows-HttpService","Information","Attempted to add URL (http://+:5985/wsman/) to URL group (0xFE00000320000001). Status: 0x0. Process Id 0xB18 Executable path \Device\HarddiskVolume4\Windows\System32\svchost.exe, User S-1-5-20","False"
+"8/28/2026 7:11:58 AM","System","7036","Service Control Manager","Information","The WinRM service entered the running state.","False"
+"8/28/2026 7:11:59 AM","System","7036","Service Control Manager","Information","The TaniumPXE service entered the running state.","False"
+"8/28/2026 7:11:59 AM","System","7036","Service Control Manager","Information","The MDCoreSvc service entered the running state.","False"
+"8/28/2026 7:11:59 AM","System","7036","Service Control Manager","Information","The PolicyAgent service entered the running state.","False"
+"8/28/2026 7:12:02 AM","System","7036","Service Control Manager","Information","The StateRepository service entered the running state.","False"
+"8/28/2026 7:12:02 AM","System","7036","Service Control Manager","Information","The WinDefend service entered the running state.","False"
+"8/28/2026 7:12:03 AM","System","7036","Service Control Manager","Information","The DiagTrack service entered the running state.","False"
+"8/28/2026 7:12:03 AM","System","158","Microsoft-Windows-Time-Service","Information","The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","False"
+"8/28/2026 7:12:03 AM","System","7036","Service Control Manager","Information","The W32Time service entered the running state.","False"
+"8/28/2026 7:12:05 AM","System","7036","Service Control Manager","Information","The AppXSvc service entered the running state.","False"
+"8/28/2026 7:12:06 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\C:\WINDOWS\AppCompat\Programs\Amcache.hve was cleared updating 129 keys and creating 45 modified pages.","False"
+"8/28/2026 7:12:14 AM","System","301","Microsoft-Windows-Hyper-V-VmSwitch","Information","Processing NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES status indication: new NumTotalMacAddresses = 8, previous NumTotalMacAddresses = 16, new MaxNumVFs = 0, previous MaxNumVFs = 0, DefaultNicSwitchCreated = false, NicState = 1.","False"
+"8/28/2026 7:12:17 AM","System","7036","Service Control Manager","Information","The EventLog service entered the running state.","False"
+"8/28/2026 7:12:17 AM","System","6008","EventLog","Error","The previous system shutdown at 1:35:15 AM on ?8/?28/?2026 was unexpected.","True"
+"8/28/2026 7:12:17 AM","System","6009","EventLog","Information","Microsoft (R) Windows (R) 10.00. 26100  Multiprocessor Free.","False"
+"8/28/2026 7:12:17 AM","System","6005","EventLog","Information","The Event log service was started.","True"
+"8/28/2026 7:12:17 AM","System","6013","EventLog","Information","The system uptime is 44 seconds.","True"
+"8/28/2026 7:12:19 AM","System","35","Microsoft-Windows-Time-Service","Information","The time service is now synchronizing the system time with the time source hqntp.mccoys.hq,0x08 (ntp.m|0x8|0.0.0.0:123->10.254.62.200:123) with reference id 3359571466. Current local stratum number is 3.","False"
+"8/28/2026 7:12:21 AM","Application","5617","Microsoft-Windows-WMI","Information","Windows Management Instrumentation Service subsystems initialized successfully","False"
+"8/28/2026 7:12:22 AM","System","7036","Service Control Manager","Information","The vmcompute service entered the running state.","False"
+"8/28/2026 7:12:22 AM","System","7036","Service Control Manager","Information","The KeyIso service entered the running state.","False"
+"8/28/2026 7:12:22 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","12514","Microsoft-Windows-Hyper-V-VMMS","Information","Found a certificate for server authentication. Remote access to virtual machines is now possible.","False"
+"8/28/2026 7:12:22 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","20410","Microsoft-Windows-Hyper-V-VMMS","Information","Successfully started the Virtual Machine migration connection manager.","False"
+"8/28/2026 7:12:23 AM","System","7036","Service Control Manager","Information","The WdNisSvc service entered the running state.","False"
+"8/28/2026 7:12:23 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33452","Microsoft-Windows-Hyper-V-VMMS","Information","Replication health limits:
+ReplicationHealthWarningCycleFactor: 10
+ReplicationHealthCriticalCycleFactor: 20
+ReplicationWarning30SecIntervalThresholdInSeconds: 300
+ReplicationCritical30SecIntervalThresholdInSeconds: 600","False"
+"8/28/2026 7:12:23 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33454","Microsoft-Windows-Hyper-V-VMMS","Information","Replication health limits:
+ReplicationHealthWarningCycleFactor: 6
+ReplicationHealthCriticalCycleFactor: 12
+ReplicationWarning5MinsIntervalThresholdInSeconds: 1800
+ReplicationCritical5MinsIntervalThresholdInSeconds: 3600","False"
+"8/28/2026 7:12:23 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33456","Microsoft-Windows-Hyper-V-VMMS","Information","Replication health limits:
+ReplicationHealthWarningCycleFactor: 4
+ReplicationHealthCriticalCycleFactor: 8
+ReplicationWarning15MinsIntervalThresholdInSeconds: 3600
+ReplicationCritical15MinsIntervalThresholdInSeconds: 7200","False"
+"8/28/2026 7:12:23 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33458","Microsoft-Windows-Hyper-V-VMMS","Information","Replication health limits:
+SupressDeltaReplicationCycleMissWarningAfterIrInHours: 24
+DelayInLastAppConsistentRecoveryPointCyclesWarning: 2
+NoProgressInIrOrResyncWarningThresholdInMinutes: 30
+NoProgressInIrOrResyncCriticalThresholdInMinutes: 60","False"
+"8/28/2026 7:12:23 AM","System","18","TPM","Information","This event triggers the Trusted Platform Module (TPM) provisioning/status check to run.","False"
+"8/28/2026 7:12:23 AM","System","7036","Service Control Manager","Information","The Tanium Client service entered the running state.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33480","Microsoft-Windows-Hyper-V-VMMS","Information","Change tracking has defined following limits for free disk space.
+Free Disk space error limit 3072 MBs (Minimum value can be 1024 MBs).
+Free Disk space warning limit 4915 MBs.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33481","Microsoft-Windows-Hyper-V-VMMS","Information","Change tracking has defined following limits for pending log file size.
+Error limit : 50% (Minimum value 10%. Maximum value 100%).
+Warning limit : 40%.
+Information limit : 30%.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33834","Microsoft-Windows-Hyper-V-VMMS","Information","Hyper-V would age out CDP reference points after 720 hours.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","33483","Microsoft-Windows-Hyper-V-VMMS","Information","Incremental Replication will timeout after 360 hours. Minimum value for timeout is 6 hours.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","14094","Microsoft-Windows-Hyper-V-VMMS","Information","Virtual Machine Management service is started successfully.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","19020","Microsoft-Windows-Hyper-V-VMMS","Information","The WMI provider 'VmmsWmiInstanceAndMethodProvider' has started.","False"
+"8/28/2026 7:12:25 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","19020","Microsoft-Windows-Hyper-V-VMMS","Information","The WMI provider 'VmmsWmiEventProvider' has started.","False"
+"8/28/2026 7:12:25 AM","System","69","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) successfully deleted - switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:25 AM","System","71","Microsoft-Windows-Hyper-V-VmSwitch","Information","Delete complete for port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ).","False"
+"8/28/2026 7:12:25 AM","System","69","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) successfully deleted - switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:25 AM","System","71","Microsoft-Windows-Hyper-V-VmSwitch","Information","Delete complete for port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ).","False"
+"8/28/2026 7:12:26 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/28/2026 7:12:30 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:12:30 AM","System","67","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:31 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: ) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC create","False"
+"8/28/2026 7:12:31 AM","System","233","Microsoft-Windows-Hyper-V-VmSwitch","Information","The operation 'Create' succeeded on nic C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: ), Instance Id {00000000-0000-0000-0000-000000000000}.","False"
+"8/28/2026 7:12:31 AM","System","232","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: Network Adapter) successfully connected to port CB98C315-566C-4DB9-AE25-7838417F2104 (Friendly Name: ) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:31 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:31 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:33 AM","System","7036","Service Control Manager","Information","The Network Connectivity Assistant service entered the stopped state.","False"
+"8/28/2026 7:12:33 AM","System","10016","Microsoft-Windows-DistributedCOM","Warning","The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{9EA82395-E31B-41CA-8DF7-EC1CEE7194DF}
+ and APPID 
+{2ED83BAA-B2FD-43B1-99BF-E6149C622692}
+ to the user NT AUTHORITY\NETWORK SERVICE SID (S-1-5-20) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool.","False"
+"8/28/2026 7:12:33 AM","System","7036","Service Control Manager","Information","The Delivery Optimization service entered the running state.","False"
+"8/28/2026 7:12:33 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\C:\WINDOWS\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\State\dosvcState.dat was cleared updating 4 keys and creating 1 modified pages.","False"
+"8/28/2026 7:12:35 AM","System","7036","Service Control Manager","Information","The Delivery Optimization service entered the stopped state.","False"
+"8/28/2026 7:12:35 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/28/2026 7:12:35 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","14052","Microsoft-Windows-Hyper-V-VMMS","Information","The Virtual Machine Management service successfully registered service principal name for 'Microsoft Virtual Console Service'.","False"
+"8/28/2026 7:12:36 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","14052","Microsoft-Windows-Hyper-V-VMMS","Information","The Virtual Machine Management service successfully registered service principal name for 'Microsoft Virtual System Migration Service'.","False"
+"8/28/2026 7:12:36 AM","Microsoft-Windows-Hyper-V-VMMS-Admin","14052","Microsoft-Windows-Hyper-V-VMMS","Information","The Virtual Machine Management service successfully registered service principal name for 'Hyper-V Replica Service'.","False"
+"8/28/2026 7:12:46 AM","System","1282","Microsoft-Windows-TPM-WMI","Information","The TBS device identifier has been generated.","False"
+"8/28/2026 7:12:48 AM","System","292","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for Port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) Previous: Disabled, Current: Enabled. Reason: Port create","False"
+"8/28/2026 7:12:48 AM","System","67","Microsoft-Windows-Hyper-V-VmSwitch","Information","Port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) successfully created on switch C4904244-116F-4210-B1E5-3FB4096D0F57 (Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:49 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: ) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC create","False"
+"8/28/2026 7:12:49 AM","System","233","Microsoft-Windows-Hyper-V-VmSwitch","Information","The operation 'Create' succeeded on nic 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: ), Instance Id {00000000-0000-0000-0000-000000000000}.","False"
+"8/28/2026 7:12:49 AM","System","232","Microsoft-Windows-Hyper-V-VmSwitch","Information","NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) successfully connected to port F40A132E-FAFD-4ECA-8030-8AC3D05FD303 (Friendly Name: ) on switch C4904244-116F-4210-B1E5-3FB4096D0F57(Friendly Name: hvs_Switch).","False"
+"8/28/2026 7:12:49 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:49 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:56 AM","System","102","Microsoft-Windows-Hyper-V-VmSwitch","Information","Networking driver in BackupPC is loaded and the protocol version is negotiated to the most recent version (Virtual machine ID 25AB2A1F-46EC-479C-8115-6DE18133A0CB).","False"
+"8/28/2026 7:12:56 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:56 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Enabled, Previous IPv6: Disabled, Current IPv6: Enabled. Reason: RSC OID","False"
+"8/28/2026 7:12:58 AM","System","102","Microsoft-Windows-Hyper-V-VmSwitch","Information","Networking driver in GK is loaded and the protocol version is negotiated to the most recent version (Virtual machine ID C3BDCD82-7819-44EE-B167-7D6856988F29).","False"
+"8/28/2026 7:12:58 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: Network Adapter) Previous IPv4: Disabled, Current IPv4: Disabled, Previous IPv6: Disabled, Current IPv6: Disabled. Reason: NIC connect","False"
+"8/28/2026 7:12:58 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC C3BDCD82-7819-44EE-B167-7D6856988F29--6BA321C6-914F-4499-BBEC-9B4004F5F537 (Friendly Name: Network Adapter) Previous IPv4: Enabled, Current IPv4: Enabled, Previous IPv6: Enabled, Current IPv6: Enabled. Reason: RSC OID","False"
+"8/28/2026 7:12:58 AM","System","1025","Microsoft-Windows-TPM-WMI","Information","The TPM was successfully provisioned and is now ready for use.","False"
+"8/28/2026 7:12:59 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:13:03 AM","System","1041","Microsoft-Windows-TPM-WMI","Information","Pre-attestation health check detailed information: {""Version"":2,""HealthStatus"":""Attestable"",""Required"":[{""Field"":""TpmPresent"",""Value"":true,""DesiredValue"":true},{""Field"":""TpmMeetsMinimumVersion"",""Value"":true,""DesiredValue"":true},{""Field"":""TpmIsResponsive"",""Value"":true,""DesiredValue"":true},{""Field"":""EkCertIsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""TcgLogFound"",""Value"":true,""DesiredValue"":true}],""Expected"":[{""Field"":""PcrsMatchTcgLog"",""Value"":true,""DesiredValue"":true}],""Informational"":[{""Field"":""SecureBootEnabled"",""ValueFromComputer"":true,""ValueFromTcgLog"":true,""DesiredValue"":true,""TcgValueIsVerifiable"":true},{""Field"":""VirtualSecureMemory"",""ValueFromComputer"":false,""ValueFromTcgLog"":false,""DesiredValue"":true,""TcgValueIsVerifiable"":true},{""Field"":""SecureCorePCCompliant"",""ValueFromComputer"":false,""ValueFromTcgLog"":false,""DesiredValue"":true,""TcgValueIsVerifiable"":true},{""Field"":""MostRecentBootTcgLogFoundInFileSystem"",""Value"":true,""DesiredValue"":true},{""Field"":""CurrentTcgLogFoundInFileSystem"",""Value"":true,""DesiredValue"":true},{""Field"":""EkCertRsa2048IsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""EkCertEccP256IsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""EkCertEccP384IsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""WindowsAikCertRsa2048IsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""WindowsAikCertEccP256IsAvailable"",""Value"":true,""DesiredValue"":true},{""Field"":""WindowsAikCertEccP384IsAvailable"",""Value"":true,""DesiredValue"":true}]}","False"
+"8/28/2026 7:13:03 AM","System","1038","Microsoft-Windows-TPM-WMI","Information","Pre-attestation health checks confirm that the device is expected to pass attestation.
+ Please see C:\WINDOWS\Logs\MeasuredBoot\0000000022-0000000000.json for detailed information on what checks were made.","False"
+"8/28/2026 7:13:11 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:13:51 AM","System","7036","Service Control Manager","Information","The Microsoft Account Sign-in Assistant service entered the running state.","False"
+"8/28/2026 7:13:52 AM","System","291","Microsoft-Windows-Hyper-V-VmSwitch","Information","RSC offload modified for NIC 25AB2A1F-46EC-479C-8115-6DE18133A0CB--B43E43CA-99C1-493B-826C-016D25B715B5 (Friendly Name: Network Adapter) Previous IPv4: Enabled, Current IPv4: Disabled, Previous IPv6: Enabled, Current IPv6: Disabled. Reason: RSC OID","False"
+"8/28/2026 7:13:56 AM","System","7036","Service Control Manager","Information","The Client License Service (ClipSVC) service entered the running state.","False"
+"8/28/2026 7:14:28 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/28/2026 7:14:40 AM","Application","4202","Microsoft-Windows-MSDTC 2","Information","MSDTC started with the following settings: Security Configuration (OFF = 0 and ON = 1): Allow Remote Administrator = 0, Network Clients = 0, Transaction Manager Communication:  Allow Inbound Transactions = 0, Allow Outbound Transactions = 0, Transaction Internet Protocol (TIP) = 0,  Enable XA Transactions = 0,  Enable SNA LU 6.2 Transactions = 1,  MSDTC Communications Security = Mutual Authentication Required, Account = NT AUTHORITY\NetworkService,  Firewall Exclusion Detected = 0 Transaction Bridge Installed = 0 Filtering Duplicate Events = 1","False"
+"8/28/2026 7:14:40 AM","System","7036","Service Control Manager","Information","The Distributed Transaction Coordinator service entered the running state.","False"
+"8/28/2026 7:15:38 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 7:15:38 AM","Application","900","Microsoft-Windows-Security-SPP","Information","The Software Protection service is starting.
+Parameters:<explicit>","False"
+"8/28/2026 7:15:57 AM","Application","1001","Microsoft-Windows-LoadPerf","Information","Performance counters for the WmiApRpl (WmiApRpl) service were removed successfully. The Record Data contains the new values of the system Last Counter and Last Help registry entries.","True"
+"8/28/2026 7:16:01 AM","Application","1000","Microsoft-Windows-LoadPerf","Information","Performance counters for the WmiApRpl (WmiApRpl) service were loaded successfully. The Record Data in the data section contains the new index values assigned to this service.","False"
+"8/28/2026 7:16:35 AM","System","7036","Service Control Manager","Information","The User Access Logging Service service entered the running state.","False"
+"8/28/2026 7:16:37 AM","System","158","Microsoft-Windows-Time-Service","Information","The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","False"
+"8/28/2026 7:16:58 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/28/2026 7:17:08 AM","System","1808","Microsoft-Windows-TPM-WMI","Information","This device has updated Secure Boot CA/keys. This device signature information is included here.
+DeviceAttributes: FirmwareManufacturer:Dell Inc.;FirmwareVersion:2.6.1;OEMManufacturerName:Dell Inc.;OEMModelSKU:SKU=0C47;ModelName=PowerEdge R260;OSArchitecture:amd64;
+BucketId: d7ecdd9416901497a6ba61b9cb4e52b79a1b9cc359012fd33268db2ed839a926
+BucketConfidenceLevel: High Confidence
+UpdateType: Windows UEFI CA 2023 (DB), Option ROM CA 2023 (DB), 3P UEFI CA 2023 (DB), KEK 2023, Boot Manager (2023)
+For more information, please see https://go.microsoft.com/fwlink/?linkid=2301018.","False"
+"8/28/2026 7:17:27 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 7:17:47 AM","System","7036","Service Control Manager","Information","The State Repository Service service entered the stopped state.","False"
+"8/28/2026 7:18:23 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:18:42 AM","System","7022","Service Control Manager","Error","The Update Orchestrator Service service hung on starting.","False"
+"8/28/2026 7:18:56 AM","System","7036","Service Control Manager","Information","The Client License Service (ClipSVC) service entered the stopped state.","False"
+"8/28/2026 7:19:08 AM","System","7036","Service Control Manager","Information","The Diagnostic Policy Service service entered the running state.","False"
+"8/28/2026 7:19:30 AM","Application","1066","Microsoft-Windows-Security-SPP","Information","Initialization status for service objects.
+C:\WINDOWS\system32\sppwinob.dll, msft:spp/windowsfunctionality/agent/7.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:rm/algorithm/inherited/1.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:rm/algorithm/phone/1.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:rm/algorithm/pkey/detect, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:spp/ActionScheduler/1.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:spp/TaskScheduler/1.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:spp/statecollector/pkey, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:spp/volume/services/kms/1.0, 0x00000000, 0x00000000
+C:\WINDOWS\system32\sppobjs.dll, msft:spp/volume/services/kms/activationinfo/1.0, 0x00000000, 0x00000000
+","False"
+"8/28/2026 7:19:38 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 7:19:39 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/28/2026 7:19:39 AM","System","7036","Service Control Manager","Information","The Update Orchestrator Service service entered the running state.","False"
+"8/28/2026 7:19:43 AM","Application","1003","Microsoft-Windows-Security-SPP","Information","The Software Protection service has completed licensing status check.
+Application Id=55c92734-d682-4d71-983e-d6ec3f16059f
+Licensing Status=
+1: 0d1bd880-2140-43c0-a2e1-506998451d6c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+2: 1b0d9de5-e09d-4257-8221-6970f082d4e9, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+3: 66354793-4375-42ee-a9be-74e94d28bbf9, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+4: 6bad0243-1c35-46b2-b8e6-7a853e37413f, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+5: 6ff6be9b-b2df-433f-85c1-37daf0eb6826, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+6: 7990b601-c924-4e58-b271-ab1d6d61d303, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+7: 7dc26449-db21-4e09-ba37-28f2958506a6, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 256833)(?)(?)( 10 0x00000000 msft:rm/algorithm/flags/1.0)(?)])(1 )(2 )(3 )]
+8: 82fcf64d-f9dd-4411-9c79-f2eed16d4eb8, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+9: 84e331f6-4279-48c4-ab10-b75139181351, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+10: 919155fb-b42b-4371-9e4b-9c2e954507a6, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+11: 9a5d353c-2d22-4e58-b60e-9fcfed846922, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+12: caac9bf3-3daf-4da1-85b1-334e0fa7ed10, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+13: d81adfb0-9c6e-4274-8453-7dec8cce3fe9, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+14: ecc748b4-08de-4d57-abdb-6da44495a8f7, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+
+","False"
+"8/28/2026 7:19:43 AM","Application","20492","Microsoft-Windows-Security-SPP","Information","Grace period terminated with code 0xC004D30B. 
+","False"
+"8/28/2026 7:19:43 AM","Application","16398","Microsoft-Windows-Security-SPP","Error","Error occured during grace period 0x80070490 at No grace timer found.","False"
+"8/28/2026 7:19:43 AM","Application","902","Microsoft-Windows-Security-SPP","Information","The Software Protection service has started.
+10.0.26100.33158","False"
+"8/28/2026 7:19:59 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 7:20:00 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 7:20:00 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 7:20:13 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:13Z. Reason: RulesEngine.","False"
+"8/28/2026 7:20:13 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 7:20:13 AM","Application","903","Microsoft-Windows-Security-SPP","Information","The Software Protection service has stopped.
+","False"
+"8/28/2026 7:20:15 AM","Application","1001","Windows Error Reporting","Information","Fault bucket 1734966420235896823, type 5
+Event Name: CriticalProcessFault2
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: services.exe
+P2: 10.0.26100.33158
+P3: dba3d8ab
+P4: RPCRT4.dll
+P5: 10.0.26100.33158
+P6: 5b596443
+P7: c0000005
+P8: 000000000004d971
+P9: 00000000
+P10: 0x00000000
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5180a0dc-27b8-4c7f-b032-3acba49b2916.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_services.exe_6eac4c32e57cac8ba265a1a76ced5917ce7e92f_33ab5c39_e0ec598c-2703-4c6b-8ca5-685c8110b3f9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9eba52a4-b79d-482b-b74a-12508b919914
+Report Status: 268435456
+Hashed bucket: 11a28ed11ea669e40813d6c4576447f7
+Cab Guid: 0","True"
+"8/28/2026 7:20:15 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:20:15 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:20:15 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:20:16 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:20:17 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 7:20:17 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 7:20:17 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 7:20:42 AM","System","7036","Service Control Manager","Information","The State Repository Service service entered the running state.","False"
+"8/28/2026 7:20:47 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:47Z. Reason: RulesEngine.","False"
+"8/28/2026 7:20:47 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 7:21:36 AM","System","7036","Service Control Manager","Information","The Remote Registry service entered the stopped state.","False"
+"8/28/2026 7:21:53 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/28/2026 7:21:55 AM","System","158","Microsoft-Windows-Time-Service","Information","The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","False"
+"8/28/2026 7:22:00 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 7:22:06 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/28/2026 7:22:22 AM","System","7036","Service Control Manager","Information","The Optimize drives service entered the running state.","False"
+"8/28/2026 7:22:27 AM","System","7040","Service Control Manager","Information","The start type of the Windows Modules Installer service was changed from demand start to auto start.","False"
+"8/28/2026 7:22:40 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/28/2026 7:22:46 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/28/2026 7:23:15 AM","System","7036","Service Control Manager","Information","The Microsoft Account Sign-in Assistant service entered the stopped state.","False"
+"8/28/2026 7:23:30 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:23:35 AM","System","1001","Microsoft-Windows-WER-SystemErrorReporting","Error","The computer has rebooted from a bugcheck.  The bugcheck was: 0x000000ef (0xffff9403595c2080, 0x0000000000000000, 0xffff9403595c2080, 0x0000000000000000). A dump was saved in: C:\WINDOWS\MEMORY.DMP. Report Id: 9c772beb-7385-428a-9276-236fcfed5532.","True"
+"8/28/2026 7:23:38 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/28/2026 7:24:00 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 7:24:01 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 7:24:11 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:24:34 AM","System","7036","Service Control Manager","Information","The Windows Error Reporting Service service entered the running state.","False"
+"8/28/2026 7:24:35 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffff9403595c2080
+P3: 0
+P4: ffff9403595c2080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\082826-16406-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-743562-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b25bfab0-34a5-4bae-94fd-cd00e6388ecd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df2bcffe-7476-4ff5-8672-a4f0b3995803.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f53567f4-a19b-4206-8b93-716194f42390.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9cf2e94-7243-42f4-8ad5-d48ed6f74e24.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_797ccfa6bdfa9fd41ba929d166450b5815fc1_00000000_4e7fe70d-75da-4784-a094-1798611902c2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9c772beb-7385-428a-9276-236fcfed5532
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:24:35 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:24:38 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:24:40 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffff9403595c2080
+P3: 0
+P4: ffff9403595c2080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\082826-16406-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-743562-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b25bfab0-34a5-4bae-94fd-cd00e6388ecd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df2bcffe-7476-4ff5-8672-a4f0b3995803.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f53567f4-a19b-4206-8b93-716194f42390.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9cf2e94-7243-42f4-8ad5-d48ed6f74e24.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_797ccfa6bdfa9fd41ba929d166450b5815fc1_00000000_4e7fe70d-75da-4784-a094-1798611902c2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9c772beb-7385-428a-9276-236fcfed5532
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/28/2026 7:25:28 AM","System","7036","Service Control Manager","Information","The Optimize drives service entered the stopped state.","False"
+"8/28/2026 7:25:44 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/28/2026 7:26:35 AM","System","7036","Service Control Manager","Information","The Windows Error Reporting Service service entered the stopped state.","False"
+"8/28/2026 7:27:01 AM","System","158","Microsoft-Windows-Time-Service","Information","The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","False"
+"8/28/2026 7:27:51 AM","System","7040","Service Control Manager","Information","The start type of the Windows Modules Installer service was changed from auto start to demand start.","False"
+"8/28/2026 7:27:57 AM","System","7040","Service Control Manager","Information","The start type of the Windows Modules Installer service was changed from demand start to auto start.","False"
+"8/28/2026 7:29:09 AM","System","7036","Service Control Manager","Information","The Diagnostic System Host service entered the running state.","False"
+"8/28/2026 7:30:17 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 7:31:35 AM","System","566","Microsoft-Windows-Kernel-Power","Information","The system session has transitioned from 0 to 1.
+
+Reason SessionUnlock 
+
+BootId: 22","False"
+"8/28/2026 7:33:41 AM","System","158","Microsoft-Windows-Time-Service","Information","The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","False"
+"8/28/2026 7:36:11 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 7:36:11 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 7:36:11 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 7:37:41 AM","System","7040","Service Control Manager","Information","The start type of the Windows Modules Installer service was changed from auto start to demand start.","False"
+"8/28/2026 7:37:42 AM","System","7040","Service Control Manager","Information","The start type of the Windows Modules Installer service was changed from demand start to auto start.","False"
+"8/28/2026 7:38:12 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 7:39:20 AM","System","566","Microsoft-Windows-Kernel-Power","Information","The system session has transitioned from 1 to 3.
+
+Reason InputHid 
+
+BootId: 22","False"
+"8/28/2026 7:39:40 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/28/2026 7:40:12 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 7:40:12 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"

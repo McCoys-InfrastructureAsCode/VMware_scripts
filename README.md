@@ -1,10 +1,7 @@
 # get_vsphere_inventory
 
-Scripts for pulling inventory and troubleshooting data from vSphere/Windows
-infrastructure.
+Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
 
-- [Get-VSphereHardwareInventory.ps1](#get-vspherehardwareinventoryps1) --
-  inventories ESXi host hardware across a vCenter.
 - [Get-CrashWindowEvents.ps1](#get-crashwindoweventsps1) -- pulls Windows
   event log entries for a host in a time window, for crash/reboot
   investigation.
@@ -32,80 +29,6 @@ or set it for your current session only:
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
-
-## Get-VSphereHardwareInventory.ps1
-
-Inventories ESXi host hardware (vendor, model, CPU, memory) across a vCenter
-Server and prints summary counts by manufacturer and by manufacturer+model.
-
-### Prerequisites
-
-- PowerShell 5.1+ (Windows PowerShell or PowerShell 7)
-- [VMware PowerCLI](https://developer.vmware.com/powercli) module
-  - The script checks for it on startup and offers to install it for the
-    current user if missing:
-    ```powershell
-    Install-Module VMware.PowerCLI -Scope CurrentUser
-    ```
-- Network access to the target vCenter Server and an account with read
-  access to hosts/clusters
-
-### Usage
-
-Run with no arguments and answer the prompts:
-
-```powershell
-.\Get-VsphereHardwareInventory.ps1
-```
-
-Or supply the vCenter up front (you'll still be prompted for credentials):
-
-```powershell
-.\Get-VsphereHardwareInventory.ps1 -VCenter vcenter.corp.local
-```
-
-If your vCenter uses a self-signed/untrusted certificate:
-
-```powershell
-.\Get-VsphereHardwareInventory.ps1 -VCenter vcenter.corp.local -AllowInvalidCert
-```
-
-Pass credentials non-interactively (e.g. from a script or scheduled task)
-using a `PSCredential` object -- never pass a plaintext password on the
-command line:
-
-```powershell
-$cred = Get-Credential
-.\Get-VsphereHardwareInventory.ps1 -VCenter vcenter.corp.local -Credential $cred
-```
-
-Choose a specific output path for the CSV:
-
-```powershell
-.\Get-VsphereHardwareInventory.ps1 -VCenter vcenter.corp.local -OutputPath C:\reports\hosts.csv
-```
-
-### Parameters
-
-| Parameter           | Required | Description |
-|----------------------|----------|-------------|
-| `-VCenter`           | No       | FQDN or IP of the vCenter Server. Prompted for if omitted. |
-| `-Credential`        | No       | `PSCredential` for vCenter. Prompted for interactively if omitted. |
-| `-OutputPath`        | No       | CSV path for the full per-host inventory. Defaults to `.\vsphere-hardware-inventory-<timestamp>.csv` in the current directory. |
-| `-AllowInvalidCert`  | No       | Switch to allow connecting to vCenters with self-signed/untrusted certificates. Off by default. |
-
-### Output
-
-- A CSV file with one row per ESXi host, including name, cluster,
-  manufacturer, model, CPU model/sockets/cores, memory (GB), ESXi
-  version/build, and connection state.
-- Console summary tables:
-  - Host count by manufacturer
-  - Host count by manufacturer + model
-  - Total CPU cores and memory by manufacturer
-
-The script disconnects from vCenter automatically when it finishes (or if
-an error occurs).
 
 ## Get-CrashWindowEvents.ps1
 
