@@ -1,0 +1,283 @@
+"TimeCreated","LogName","Id","ProviderName","LevelDisplayName","Message","CrashIndicator"
+"8/27/2026 10:11:02 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 10:12:41 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 10:13:52 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:13:52 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:13:52 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:15:31 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 10:15:52 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:16:32 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 10:17:52 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:17:52 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 10:35:04 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:35:05 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:35:05 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:37:05 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:39:05 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:39:05 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 10:53:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 10:53:58 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 10:53:58 PM","Application","1023","Microsoft-Windows-Perflib","Error","Windows cannot load the extensible counter DLL ""C:\Windows\System32\perfts.dll"" (Win32 error code The specified module could not be found.).","False"
+"8/27/2026 10:53:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 10:55:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 10:57:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 10:57:59 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:04:14 PM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/27/2026 11:04:14 PM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/27/2026 11:10:08 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:10:09 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:10:09 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:12:09 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:14:06 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/27/2026 11:14:07 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/27/2026 11:14:09 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:14:10 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:15:31 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/27/2026 11:15:32 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/27/2026 11:15:32 PM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/27/2026 11:15:32 PM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/27/2026 11:16:02 PM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:02Z. Reason: RulesEngine.","False"
+"8/27/2026 11:16:02 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/27/2026 11:16:33 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/27/2026 11:17:26 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/27/2026 11:25:06 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/27/2026 11:27:45 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:27:46 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:27:46 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:29:46 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:31:46 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:31:47 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/27/2026 11:49:29 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/27/2026 11:49:30 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/27/2026 11:49:30 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/27/2026 11:51:30 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/27/2026 11:53:30 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/27/2026 11:53:30 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:10:34 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:10:34 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:10:34 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:12:35 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:14:22 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/28/2026 12:14:22 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/28/2026 12:14:35 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:14:35 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:15:31 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/28/2026 12:16:24 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/28/2026 12:16:32 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/28/2026 12:19:22 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:05 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:20:06 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1252).","False"
+"8/28/2026 12:28:38 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:28:38 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:28:38 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:30:39 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:32:39 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:32:39 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 12:53:42 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/28/2026 12:53:42 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/28/2026 12:53:42 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/28/2026 12:55:43 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/28/2026 12:57:43 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/28/2026 12:57:43 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/28/2026 1:04:45 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/28/2026 1:05:00 AM","System","1014","Microsoft-Windows-DNS-Client","Warning","Name resolution for the name mccoys-zs2.cloud.tanium.com timed out after none of the configured DNS servers responded. Client PID 4068.","False"
+"8/28/2026 1:05:09 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/28/2026 1:05:41 AM","System","5719","NETLOGON","Error","This computer was not able to set up a secure session with a domain controller in domain DOMAIN1 due to the following: 
+We can't sign you in with this credential because your domain isn't available. Make sure your device is connected to your organization's network and try again. If you previously signed in on this device with another credential, you can sign in with that credential. 
+This may lead to authentication problems. Make sure that this computer is connected to the network. If the problem persists, please contact your domain administrator.  
+
+ADDITIONAL INFO 
+If this computer is a domain controller for the specified domain, it sets up the secure session to the primary domain controller emulator in the specified domain. Otherwise, this computer sets up the secure session to any domain controller in the specified domain.","True"
+"8/28/2026 1:05:53 AM","System","1054","Microsoft-Windows-GroupPolicy","Error","The processing of Group Policy failed. Windows could not obtain the name of a domain controller. This could be caused by a name resolution failure. Verify your Domain Name System (DNS) is configured and working correctly.","False"
+"8/28/2026 1:05:53 AM","System","1500","Microsoft-Windows-GroupPolicy","Information","The Group Policy settings for the computer were processed successfully. There were no changes detected since the last successful processing of Group Policy.","False"
+"8/28/2026 1:15:31 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/28/2026 1:15:32 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 1:15:32 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 1:15:32 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 1:16:02 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:02Z. Reason: RulesEngine.","False"
+"8/28/2026 1:16:02 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 1:16:32 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/28/2026 1:19:32 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/28/2026 1:19:32 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/28/2026 1:19:33 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/28/2026 1:19:33 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/28/2026 1:19:33 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/28/2026 1:19:33 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/28/2026 1:20:04 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:04Z. Reason: RulesEngine.","False"
+"8/28/2026 1:20:04 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/28/2026 1:20:10 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/28/2026 1:20:10 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/28/2026 1:24:34 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
