@@ -10,10 +10,12 @@
     FQDN or hostname of the target machine. Prompted for if not supplied.
 
 .PARAMETER StartTime
-    Start of the time window to query (DateTime). Prompted for if not supplied.
+    Start of the time window to query (DateTime). Defaults to 12 hours before
+    the current time if not supplied.
 
 .PARAMETER EndTime
-    End of the time window to query (DateTime). Prompted for if not supplied.
+    End of the time window to query (DateTime). Defaults to the current time
+    if not supplied.
 
 .PARAMETER Credential
     PSCredential for the target machine. Prompted for interactively if not
@@ -86,11 +88,11 @@ $CrashIndicatorIdProviderPairs = @(
 if (-not $ComputerName) {
     $ComputerName = Read-Host "Computer name (FQDN or hostname)"
 }
-if (-not $StartTime) {
-    $StartTime = Read-Host "Start time (e.g. 2026-08-28 01:00:00)"
-}
 if (-not $EndTime) {
-    $EndTime = Read-Host "End time (e.g. 2026-08-28 04:00:00)"
+    $EndTime = Get-Date
+}
+if (-not $StartTime) {
+    $StartTime = $EndTime.AddHours(-12)
 }
 if (-not $Credential) {
     $username = Read-Host "Username for $ComputerName (e.g. mccoys\yourname)"

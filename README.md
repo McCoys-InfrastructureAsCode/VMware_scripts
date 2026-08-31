@@ -89,8 +89,8 @@ $cred = Get-Credential
 | Parameter        | Required | Description |
 |-------------------|----------|-------------|
 | `-ComputerName`   | No       | FQDN or hostname of the target machine. Prompted for if omitted. |
-| `-StartTime`      | No       | Start of the time window to query. Prompted for if omitted. |
-| `-EndTime`        | No       | End of the time window to query. Prompted for if omitted. |
+| `-StartTime`      | No       | Start of the time window to query. Defaults to 12 hours before the current time if omitted. |
+| `-EndTime`        | No       | End of the time window to query. Defaults to the current time if omitted. |
 | `-Credential`     | No       | `PSCredential` for the target machine. Prompted for (username/password, console-based) if omitted. |
 | `-LogName`        | No       | Event log(s) to query. Defaults to `System`, `Application`, and `Microsoft-Windows-Hyper-V-VMMS-Admin` (silently skipped if that log doesn't exist on the target). |
 | `-OutputPath`     | No       | CSV path for the full, untruncated event dump. Defaults to `.\crash-events-<ComputerName>-<timestamp>.csv` in the current directory. |
