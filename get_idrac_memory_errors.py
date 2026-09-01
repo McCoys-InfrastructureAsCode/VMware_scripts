@@ -30,14 +30,14 @@ except ImportError:
 MEMORY_KEYWORDS = ("memory", "dimm", "ecc", "correctable")
 
 
-def get_json(session, base_url, path):
-    resp = session.get(f"{base_url}{path}", timeout=30)
+def get_json(session, base_url, path, timeout=60):
+    resp = session.get(f"{base_url}{path}", timeout=timeout)
     resp.raise_for_status()
     return resp.json()
 
 
-def find_first_member_id(session, base_url, collection_path, label):
-    data = get_json(session, base_url, collection_path)
+def find_first_member_id(session, base_url, collection_path, label, timeout=60):
+    data = get_json(session, base_url, collection_path, timeout=timeout)
     members = data.get("Members", [])
     if not members:
         raise RuntimeError(f"No {label} found on this iDRAC")
@@ -65,12 +65,12 @@ def extract_error_fields(obj, prefix=""):
     return found
 
 
-def get_memory_inventory(session, base_url, system_id):
-    data = get_json(session, base_url, f"/redfish/v1/Systems/{system_id}/Memory")
+def get_memory_inventory(session, base_url, system_id, timeout=60):
+    data = get_json(session, base_url, f"/redfish/v1/Systems/{system_id}/Memory", timeout=timeout)
     dimms = []
     for member in data.get("Members", []):
         dimm_path = member["@odata.id"]
-        dimm = get_json(session, base_url, dimm_path)
+        dimm = get_json(session, base_url, dimm_path, timeout=timeout)
         entry = {
             "Name": dimm.get("Name"),
             "CapacityMiB": dimm.get("CapacityMiB"),
@@ -80,7 +80,7 @@ def get_memory_inventory(session, base_url, system_id):
         }
         metrics_path = f"{dimm_path.rstrip('/')}/MemoryMetrics"
         try:
-            metrics = get_json(session, base_url, metrics_path)
+            metrics = get_json(session, base_url, metrics_path, timeout=timeout)
             entry["MemoryMetrics"] = metrics
             entry["ErrorFields"] = extract_error_fields(metrics)
         except requests.HTTPError:
@@ -90,11 +90,11 @@ def get_memory_inventory(session, base_url, system_id):
     return dimms
 
 
-def paginate_log_entries(session, base_url, entries_path, since):
+def paginate_log_entries(session, base_url, entries_path, since, timeout=60):
     entries = []
     path = entries_path
     while path:
-        data = get_json(session, base_url, path)
+        data = get_json(session, base_url, path, timeout=timeout)
         for e in data.get("Members", []):
             created = e.get("Created")
             if since and created:
@@ -140,6 +140,13 @@ def main():
         default=".",
         help="Directory to write the full JSON report into (default: current directory)",
     )
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=60,
+        help="Per-request timeout in seconds (default: 60). Increase this if login is backed by "
+        "Active Directory/LDAP, which can be slower than local iDRAC accounts.",
+    )
     args = parser.parse_args()
 
     if not args.username:
@@ -155,27 +162,36 @@ def main():
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     try:
-        print(f"Connecting to {args.idrac} ...")
-        system_id = find_first_member_id(session, base_url, "/redfish/v1/Systems", "Systems")
-        manager_id = find_first_member_id(session, base_url, "/redfish/v1/Managers", "Managers")
+        print(f"Connecting to {args.idrac} (timeout {args.timeout}s per request) ...")
+        system_id = find_first_member_id(session, base_url, "/redfish/v1/Systems", "Systems", timeout=args.timeout)
+        manager_id = find_first_member_id(session, base_url, "/redfish/v1/Managers", "Managers", timeout=args.timeout)
 
         print("Pulling DIMM inventory and per-DIMM memory metrics ...")
-        dimms = get_memory_inventory(session, base_url, system_id)
+        dimms = get_memory_inventory(session, base_url, system_id, timeout=args.timeout)
 
         since = datetime.now(timezone.utc) - timedelta(days=args.since_days)
 
         print("Pulling System Event Log ...")
         sel_entries = paginate_log_entries(
-            session, base_url, f"/redfish/v1/Systems/{system_id}/LogServices/Sel/Entries", since
+            session, base_url, f"/redfish/v1/Systems/{system_id}/LogServices/Sel/Entries", since, timeout=args.timeout
         )
 
         print("Pulling Lifecycle Log ...")
         try:
             lc_entries = paginate_log_entries(
-                session, base_url, f"/redfish/v1/Managers/{manager_id}/LogServices/Lclog/Entries", since
+                session,
+                base_url,
+                f"/redfish/v1/Managers/{manager_id}/LogServices/Lclog/Entries",
+                since,
+                timeout=args.timeout,
             )
         except requests.HTTPError:
             lc_entries = []
+    except requests.exceptions.Timeout:
+        sys.exit(
+            f"Request to {args.idrac} timed out after {args.timeout}s. If this account is authenticated "
+            "via Active Directory/LDAP, try --timeout with a larger value, or use a local iDRAC account."
+        )
     except requests.exceptions.RequestException as exc:
         sys.exit(f"Failed talking to iDRAC at {args.idrac}: {exc}")
 
