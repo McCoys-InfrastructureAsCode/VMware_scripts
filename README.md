@@ -15,6 +15,10 @@ Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
 - [get_idrac_memory_errors.py](#get_idrac_memory_errorspy) -- pulls DIMM
   health and memory-related log entries from a Dell iDRAC9 over Redfish,
   to check for hardware ECC errors independently of the OS.
+- [Start-SupportAssistCollection.ps1](#start-supportassistcollectionps1)
+  -- triggers a Dell SupportAssist Collection bundle on an iDRAC9 and
+  waits for it to finish, for a broader hardware/firmware-level diagnostic
+  cross-check.
 
 Typical crash/reboot workflow: run `Get-CrashWindowEvents.ps1` first for a
 broad look at what happened, then `Get-CrashRootCause.ps1` to narrow in on
@@ -260,12 +264,16 @@ again):
 
 ## get_idrac_memory_errors.py
 
-Pulls DIMM inventory/health and memory-related entries from the System
-Event Log and Lifecycle Log on a Dell iDRAC9, over Redfish -- an
-out-of-band, firmware-level view of ECC memory errors, independent of
-whatever (if anything) made it up to the OS/WHEA layer. Iterates over
-however many DIMMs the Redfish `Memory` collection reports; nothing is
-hardcoded to a specific DIMM count.
+Pulls DIMM inventory/health and memory-related entries from every log
+service on a Dell iDRAC9 (System Event Log, Lifecycle Log, etc.), over
+Redfish -- an out-of-band, firmware-level view of ECC memory errors,
+independent of whatever (if anything) made it up to the OS/WHEA layer.
+Iterates over however many DIMMs the Redfish `Memory` collection reports;
+nothing is hardcoded to a specific DIMM count. Log services are
+discovered dynamically (via each resource's `LogServices` collection)
+rather than assumed by name -- exact ids like `Sel`/`Lclog` vary across
+iDRAC firmware/generations, and a hardcoded guess 404s on firmware that
+uses different ones.
 
 Per-DIMM ECC error counter fields vary by iDRAC firmware/generation, so
 rather than hardcoding a specific field path, the script walks each
@@ -314,8 +322,74 @@ python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --since-days
 - Console summary: each DIMM's `Health`/`State`/capacity, flagging any
   that aren't `Health=OK`, plus any ECC/error-related fields found in its
   `MemoryMetrics`.
-- Console listing of System Event Log and Lifecycle Log entries (within
-  `--since-days`) that mention memory/DIMM/ECC/correctable.
+- Console listing of every discovered log service's entries (within
+  `--since-days`) that mention memory/DIMM/ECC/correctable, tagged with
+  which log service each came from.
 - A full JSON report (`idrac-memory-report-<idrac>-<timestamp>.json`) with
-  the raw DIMM data, `MemoryMetrics`, and all matched log entries, for
-  cases where the console summary doesn't surface what you need.
+  the discovered log services, raw DIMM data, `MemoryMetrics`, and all
+  matched log entries, for cases where the console summary doesn't
+  surface what you need.
+
+## Start-SupportAssistCollection.ps1
+
+Triggers a Dell SupportAssist Collection on an iDRAC9 over Redfish and
+polls it to completion, so you don't have to babysit the web UI for the
+several minutes a collection takes. The bundle itself packages hardware
+inventory, the Lifecycle Log, System Event Log, TTY log, and (optionally)
+OS-level data into one `.zip` -- a broader cross-check alongside
+`Get-CrashDumpAnalysis.ps1` and `get_idrac_memory_errors.py`.
+
+**Without a network share configured, this script stops at "collection
+complete"** and tells you to download the bundle manually from the web UI
+(`Maintenance > SupportAssist > SupportAssist Collections`). Dell doesn't
+expose a documented, stable API path to pull a bundle that's stored
+locally on the iDRAC -- only to push it to a CIFS/NFS/HTTP(S) share. If
+you set one up later, extend the `$collectBody` hashtable in the script
+with `ShareType`/`IPAddress`/`ShareName`/`Username`/`Password` to export
+there directly instead of downloading by hand.
+
+Exact Redfish action names/payload fields for SupportAssist have shifted
+a bit across iDRAC9 firmware revisions. If a call 404s, the script
+fetches `DellLCService`'s actual advertised `Actions` and prints them, so
+you can see what this firmware really calls things instead of guessing
+blind.
+
+### Prerequisites
+
+- Same network reachability as `get_idrac_memory_errors.py` (HTTPS, port
+  443, to the iDRAC).
+- An iDRAC account with rights to run SupportAssist operations (the
+  default `root` account works).
+
+### Usage
+
+```powershell
+.\Start-SupportAssistCollection.ps1 -IDRAC 10.200.44.133 -Insecure
+```
+
+Include OS-level data too (may need extra OS credential fields this
+script doesn't currently set -- see the script's `.DESCRIPTION`):
+
+```powershell
+.\Start-SupportAssistCollection.ps1 -IDRAC 10.200.44.133 -Insecure -DataSelector HWData,TTYLogData,TelemetryReports,OSAppData
+```
+
+### Parameters
+
+| Parameter            | Required | Description |
+|------------------------|----------|-------------|
+| `-IDRAC`              | No       | iDRAC hostname or IP. Prompted for if omitted. |
+| `-Credential`         | No       | `PSCredential` for the iDRAC. Prompted for (username/password, console-based) if omitted. |
+| `-Insecure`           | No       | Switch. Skip TLS certificate verification (for iDRACs with self-signed certs). |
+| `-DataSelector`       | No       | Which data types to collect. Defaults to `HWData`, `TTYLogData`, `TelemetryReports`. |
+| `-PollIntervalSec`    | No       | Seconds between job status checks. Defaults to `15`. |
+| `-MaxWaitMinutes`     | No       | Give up waiting after this many minutes (the collection keeps running on the iDRAC regardless). Defaults to `30`. |
+
+### Output
+
+- Console progress: job state/percent-complete on each poll.
+- On completion, a pointer to where to download the bundle from the web
+  UI (no share configured means no direct file to hand back over Redfish).
+- On a failed action call, a printed list of the actions this firmware's
+  `DellLCService` actually advertises, to help pin down a naming mismatch
+  quickly.

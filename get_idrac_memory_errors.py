@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Pulls DIMM health/inventory and memory-related log entries (System Event
-Log + Lifecycle Log) from a Dell iDRAC9 over Redfish, to check for ECC
-memory errors independently of whatever the OS/WHEA layer saw.
+Pulls DIMM health/inventory and memory-related log entries from a Dell
+iDRAC9 over Redfish, to check for ECC memory errors independently of
+whatever the OS/WHEA layer saw. Log services (System Event Log, Lifecycle
+Log, etc.) are discovered dynamically rather than assumed by name, since
+their exact ids/paths vary across iDRAC firmware/generations.
 
 Requires: pip install requests
 
@@ -90,6 +92,35 @@ def get_memory_inventory(session, base_url, system_id, timeout=60):
     return dimms
 
 
+def discover_log_services(session, base_url, resource_path, timeout=60):
+    """Return [{'id', 'name', 'entries_path'}, ...] for every log service
+    under a resource (e.g. /redfish/v1/Systems/System.Embedded.1 or
+    /redfish/v1/Managers/iDRAC.Embedded.1). Log service names/ids (e.g.
+    "Sel" vs "SEL", "Lclog" vs "LC") vary across iDRAC firmware/
+    generations, so this discovers them rather than assuming fixed names."""
+    services = []
+    try:
+        data = get_json(session, base_url, f"{resource_path}/LogServices", timeout=timeout)
+    except requests.HTTPError:
+        return services
+    for member in data.get("Members", []):
+        svc_path = member["@odata.id"]
+        try:
+            svc = get_json(session, base_url, svc_path, timeout=timeout)
+        except requests.HTTPError:
+            continue
+        entries_path = (svc.get("Entries") or {}).get("@odata.id")
+        if entries_path:
+            services.append(
+                {
+                    "id": svc.get("Id") or svc_path.rstrip("/").rsplit("/", 1)[-1],
+                    "name": svc.get("Name"),
+                    "entries_path": entries_path,
+                }
+            )
+    return services
+
+
 def paginate_log_entries(session, base_url, entries_path, since, timeout=60):
     entries = []
     path = entries_path
@@ -171,22 +202,30 @@ def main():
 
         since = datetime.now(timezone.utc) - timedelta(days=args.since_days)
 
-        print("Pulling System Event Log ...")
-        sel_entries = paginate_log_entries(
-            session, base_url, f"/redfish/v1/Systems/{system_id}/LogServices/Sel/Entries", since, timeout=args.timeout
+        print("Discovering log services ...")
+        log_services = discover_log_services(
+            session, base_url, f"/redfish/v1/Systems/{system_id}", timeout=args.timeout
         )
+        log_services += discover_log_services(
+            session, base_url, f"/redfish/v1/Managers/{manager_id}", timeout=args.timeout
+        )
+        if not log_services:
+            print("  No log services discovered.")
+        else:
+            print("  Found: " + ", ".join(svc["name"] or svc["id"] for svc in log_services))
 
-        print("Pulling Lifecycle Log ...")
-        try:
-            lc_entries = paginate_log_entries(
-                session,
-                base_url,
-                f"/redfish/v1/Managers/{manager_id}/LogServices/Lclog/Entries",
-                since,
-                timeout=args.timeout,
-            )
-        except requests.HTTPError:
-            lc_entries = []
+        all_entries = []
+        for svc in log_services:
+            label = svc["name"] or svc["id"]
+            print(f"Pulling {label} ...")
+            try:
+                entries = paginate_log_entries(session, base_url, svc["entries_path"], since, timeout=args.timeout)
+            except requests.HTTPError as exc:
+                print(f"  Skipping {label}: {exc}")
+                continue
+            for e in entries:
+                e["_LogService"] = label
+            all_entries.extend(entries)
     except requests.exceptions.Timeout:
         sys.exit(
             f"Request to {args.idrac} timed out after {args.timeout}s. If this account is authenticated "
@@ -195,8 +234,7 @@ def main():
     except requests.exceptions.RequestException as exc:
         sys.exit(f"Failed talking to iDRAC at {args.idrac}: {exc}")
 
-    sel_memory_entries = filter_memory_related(sel_entries)
-    lc_memory_entries = filter_memory_related(lc_entries)
+    memory_entries = filter_memory_related(all_entries)
 
     print("\n=== DIMM health ===")
     unhealthy = []
@@ -219,13 +257,9 @@ def main():
             "above and the log entries below."
         )
 
-    print(f"\n=== Memory-related System Event Log entries (last {args.since_days}d): {len(sel_memory_entries)} ===")
-    for e in sel_memory_entries:
-        print(f"  {e.get('Created')}  {e.get('Message')}")
-
-    print(f"\n=== Memory-related Lifecycle Log entries (last {args.since_days}d): {len(lc_memory_entries)} ===")
-    for e in lc_memory_entries:
-        print(f"  {e.get('Created')}  {e.get('Message')}")
+    print(f"\n=== Memory-related log entries (last {args.since_days}d): {len(memory_entries)} ===")
+    for e in memory_entries:
+        print(f"  [{e.get('_LogService')}] {e.get('Created')}  {e.get('Message')}")
 
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     output_path = Path(args.output_dir) / f"idrac-memory-report-{args.idrac}-{stamp}.json"
@@ -233,9 +267,9 @@ def main():
         "idrac": args.idrac,
         "generated": datetime.now(timezone.utc).isoformat(),
         "since_days": args.since_days,
+        "log_services_found": [svc["name"] or svc["id"] for svc in log_services],
         "dimms": dimms,
-        "sel_memory_entries": sel_memory_entries,
-        "lc_memory_entries": lc_memory_entries,
+        "memory_entries": memory_entries,
     }
     output_path.write_text(json.dumps(report, indent=2))
     print(f"\nFull report (including raw MemoryMetrics and all matched log entries) written to {output_path}")
