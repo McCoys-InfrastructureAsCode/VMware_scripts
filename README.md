@@ -12,6 +12,9 @@ Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
 - [Get-CrashDumpAnalysis.ps1](#get-crashdumpanalysisps1) -- pulls the
   memory dump from a bugcheck and runs an automated `!analyze -v` against
   it, to identify the actual process/driver behind the crash.
+- [get_idrac_memory_errors.py](#get_idrac_memory_errorspy) -- pulls DIMM
+  health and memory-related log entries from a Dell iDRAC9 over Redfish,
+  to check for hardware ECC errors independently of the OS.
 
 Typical crash/reboot workflow: run `Get-CrashWindowEvents.ps1` first for a
 broad look at what happened, then `Get-CrashRootCause.ps1` to narrow in on
@@ -19,7 +22,11 @@ the likely cause and downtime window -- both run over WinRM, so you don't
 need iDRAC or vSphere console access for this kind of triage. If a
 bugcheck (`WER-SystemErrorReporting` event `1001`) turns up and a dump was
 saved, run `Get-CrashDumpAnalysis.ps1` next to pin down the actual culprit
-process/driver rather than just the bugcheck code.
+process/driver rather than just the bugcheck code. If the culprit process
+looks like it hit corrupted memory (garbled exception/context data) and
+you want to rule hardware in or out, `get_idrac_memory_errors.py` checks
+the host's out-of-band ECC error history, independent of anything the OS
+saw.
 
 ## Execution policy
 
@@ -188,10 +195,11 @@ re-download them every time.
 ### Prerequisites
 
 - Same WinRM reachability as the other scripts.
-- **`cdb.exe`** ("Debugging Tools for Windows") installed locally --
-  install the Windows SDK and select just the "Debugging Tools for
-  Windows" component, or point `-CdbPath` at an existing install. The
-  script auto-detects common install locations and PATH.
+- **`cdb.exe`** installed locally -- easiest via
+  `winget install --id Microsoft.WinDbg` (the modern WinDbg package
+  bundles cdb.exe), or install "Debugging Tools for Windows" from the
+  Windows SDK installer. The script auto-detects either, or point
+  `-CdbPath` at an existing install.
 - Outbound internet access to `https://msdl.microsoft.com` (Microsoft's
   public symbol server) for the first analysis of a given bugcheck --
   subsequent runs reuse the local symbol cache.
@@ -208,25 +216,36 @@ Point at a specific minidump instead of the default full/kernel dump:
 .\Get-CrashDumpAnalysis.ps1 -ComputerName hvs044-01.mccoys.hq -DumpPath 'C:\Windows\Minidump\082826-12345-01.dmp'
 ```
 
-Keep the copied dump around afterward (e.g. to open it in WinDbg's GUI):
+Keep the copied dump around afterward (e.g. to open it in WinDbg's GUI, or
+to re-run analysis later without re-copying a large dump):
 
 ```powershell
 .\Get-CrashDumpAnalysis.ps1 -ComputerName hvs044-01.mccoys.hq -KeepLocalDump
+```
+
+Re-analyze a dump you already have locally -- e.g. one kept via
+`-KeepLocalDump` above -- with no remote connection made at all (handy for
+re-running after a symbol/analysis tweak, without paying for the copy
+again):
+
+```powershell
+.\Get-CrashDumpAnalysis.ps1 -LocalDumpPath .\dumps\hvs044-01.mccoys.hq-20260901-113803.DMP
 ```
 
 ### Parameters
 
 | Parameter            | Required | Description |
 |------------------------|----------|-------------|
-| `-ComputerName`       | No       | FQDN or hostname of the target machine. Prompted for if omitted. |
+| `-ComputerName`       | No       | FQDN or hostname of the target machine. Prompted for if omitted (unless `-LocalDumpPath` is used). |
 | `-Credential`         | No       | `PSCredential` for the target machine. Prompted for (username/password, console-based) if omitted. |
 | `-DumpPath`           | No       | Path to the dump file on the remote host. Defaults to `C:\Windows\MEMORY.DMP`. |
 | `-LocalDumpDir`       | No       | Local folder the dump is copied into. Defaults to `.\dumps`. |
+| `-LocalDumpPath`      | No       | Skip the remote pull and re-analyze a dump you already have locally. Ignores `-ComputerName`/`-Credential`/`-DumpPath`/`-LocalDumpDir` and never deletes the file. |
 | `-CdbPath`            | No       | Path to `cdb.exe`. Auto-detected if omitted. |
-| `-SymbolCachePath`    | No       | Local folder used to cache downloaded symbols across runs. Defaults to `.\symbols`. |
+| `-SymbolCachePath`    | No       | Local folder used to cache downloaded symbols across runs. Defaults to `.\symbols` (resolved to an absolute path before use). |
 | `-SymbolServer`       | No       | Symbol server URL. Defaults to Microsoft's public symbol server. |
-| `-OutputPath`         | No       | Path for the full `!analyze -v` text output. Defaults to `.\crash-dump-analysis-<ComputerName>-<timestamp>.txt`. |
-| `-KeepLocalDump`      | No       | Switch. Keep the copied `.dmp` after analysis instead of deleting it. |
+| `-OutputPath`         | No       | Path for the full `!analyze -v` text output. Defaults to `.\crash-dump-analysis-<name>-<timestamp>.txt`. |
+| `-KeepLocalDump`      | No       | Switch. Keep the copied `.dmp` after analysis instead of deleting it. Ignored (never deletes) when `-LocalDumpPath` is used. |
 
 ### Output
 
@@ -238,3 +257,64 @@ Keep the copied dump around afterward (e.g. to open it in WinDbg's GUI):
 - The copied `.dmp` is deleted after analysis unless `-KeepLocalDump` is
   passed (dumps can be large; both `.\dumps\` and `.\symbols\` are
   gitignored).
+
+## get_idrac_memory_errors.py
+
+Pulls DIMM inventory/health and memory-related entries from the System
+Event Log and Lifecycle Log on a Dell iDRAC9, over Redfish -- an
+out-of-band, firmware-level view of ECC memory errors, independent of
+whatever (if anything) made it up to the OS/WHEA layer. Iterates over
+however many DIMMs the Redfish `Memory` collection reports; nothing is
+hardcoded to a specific DIMM count.
+
+Per-DIMM ECC error counter fields vary by iDRAC firmware/generation, so
+rather than hardcoding a specific field path, the script walks each
+DIMM's `MemoryMetrics` resource and surfaces any field whose name
+contains "ecc", "error", or "correctable" -- plus DIMM `Health`/`State`,
+which is the more universally-supported signal.
+
+### Prerequisites
+
+- Python 3 with the `requests` package (`pip install requests`).
+- Network access to the iDRAC's HTTPS interface (typically port 443) and
+  an iDRAC account with read access to Systems/Managers/logs (the default
+  `root` account works; use `--username` for anything else).
+
+### Usage
+
+```powershell
+python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq
+```
+
+Self-signed iDRAC certificate (common for internal iDRACs):
+
+```powershell
+python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --insecure
+```
+
+Widen or narrow how far back log entries are pulled (default 30 days):
+
+```powershell
+python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --since-days 90
+```
+
+### Parameters
+
+| Argument         | Required | Description |
+|-------------------|----------|-------------|
+| `--idrac`         | Yes      | iDRAC hostname or IP. |
+| `--username`      | No       | iDRAC account. Defaults to `root`. Password is always prompted for interactively -- never pass it on the command line. |
+| `--insecure`      | No       | Skip TLS certificate verification (for iDRACs with self-signed certs). |
+| `--since-days`    | No       | Only include log entries from the last N days. Defaults to `30`. |
+| `--output-dir`    | No       | Directory to write the full JSON report into. Defaults to the current directory. |
+
+### Output
+
+- Console summary: each DIMM's `Health`/`State`/capacity, flagging any
+  that aren't `Health=OK`, plus any ECC/error-related fields found in its
+  `MemoryMetrics`.
+- Console listing of System Event Log and Lifecycle Log entries (within
+  `--since-days`) that mention memory/DIMM/ECC/correctable.
+- A full JSON report (`idrac-memory-report-<idrac>-<timestamp>.json`) with
+  the raw DIMM data, `MemoryMetrics`, and all matched log entries, for
+  cases where the console summary doesn't surface what you need.
