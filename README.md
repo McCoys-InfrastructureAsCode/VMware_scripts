@@ -364,10 +364,18 @@ you set one up later, add `ShareType`/`IPAddress`/`ShareName`/`Username`/
 directly instead of downloading by hand.
 
 Exact Redfish action names/payload fields for SupportAssist have shifted
-a bit across iDRAC9 firmware revisions. If a call 404s, the script
-fetches `DellLCService`'s actual advertised `Actions` and prints them, so
-you can see what this firmware really calls things instead of guessing
-blind.
+a bit across iDRAC9 firmware revisions. If a call keeps 404ing after
+retries are exhausted, the script fetches `DellLCService`'s actual
+advertised `Actions` and prints them, so you can see what this firmware
+really calls things instead of guessing blind.
+
+Every request retries with backoff (`--max-retries`/`--retry-backoff`) on
+a 404/429/5xx or connection error before giving up -- iDRAC's embedded
+Redfish service has been observed returning a spurious error for a
+resource that works fine a moment earlier or later under sustained
+request load (confirmed on this host: the same `DellLCService` path
+succeeded, then 404'd on the very next call, while the SupportAssist page
+loaded fine in the web UI the whole time).
 
 ### Prerequisites
 
@@ -401,6 +409,8 @@ python start_support_assist_collection.py --idrac 10.200.44.133 --insecure --dat
 | `--poll-interval`     | No       | Seconds between job status checks. Defaults to `15`. |
 | `--max-wait-minutes`  | No       | Give up waiting after this many minutes (the collection keeps running on the iDRAC regardless). Defaults to `30`. |
 | `--timeout`           | No       | Per-request timeout in seconds. Defaults to `60`. |
+| `--max-retries`       | No       | Retry a request this many times on a 404/429/5xx or connection error before giving up -- iDRAC's Redfish service has been observed returning spurious errors under sustained request load. Defaults to `3`. |
+| `--retry-backoff`     | No       | Base seconds for retry backoff, doubling each attempt (2s, 4s, 8s, ...). Defaults to `2`. |
 
 ### Output
 

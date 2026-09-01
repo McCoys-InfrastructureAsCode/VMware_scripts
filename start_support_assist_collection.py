@@ -49,28 +49,62 @@ except ImportError:
 TERMINAL_STATES = ("Completed", "CompletedWithErrors", "Failed", "Exception")
 SUCCESS_STATES = ("Completed", "CompletedWithErrors")
 
+# iDRAC's embedded Redfish service is a fairly resource-constrained daemon
+# and has been observed returning a spurious 404/5xx for a resource that
+# a moment earlier (or a moment later) responds fine, under sustained
+# request load. Retry these with backoff rather than treating the first
+# one as authoritative; a *persistently* missing resource still ends up
+# failing the same way after retries are exhausted.
+RETRYABLE_STATUS_CODES = {404, 429, 500, 502, 503, 504}
 
-def idrac_request(session, base_url, method, path, body=None, timeout=60):
+
+def idrac_request(session, base_url, method, path, body=None, timeout=60, max_retries=3, backoff_base=2):
     url = path if path.startswith("http") else f"{base_url}{path}"
-    resp = session.request(method, url, json=body, timeout=timeout)
-    resp.raise_for_status()
-    return resp
+    attempt = 0
+    while True:
+        attempt += 1
+        try:
+            resp = session.request(method, url, json=body, timeout=timeout)
+            resp.raise_for_status()
+            return resp
+        except requests.HTTPError as exc:
+            status = exc.response.status_code if exc.response is not None else None
+            if status in RETRYABLE_STATUS_CODES and attempt <= max_retries:
+                wait = backoff_base * (2 ** (attempt - 1))
+                print(f"  {method} {path} returned {status}, retrying in {wait}s (attempt {attempt}/{max_retries}) ...")
+                time.sleep(wait)
+                continue
+            raise
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as exc:
+            if attempt <= max_retries:
+                wait = backoff_base * (2 ** (attempt - 1))
+                print(
+                    f"  {method} {path} failed ({exc.__class__.__name__}), retrying in {wait}s "
+                    f"(attempt {attempt}/{max_retries}) ..."
+                )
+                time.sleep(wait)
+                continue
+            raise
 
 
-def find_dell_lc_service_path(session, base_url, timeout):
+def find_dell_lc_service_path(session, base_url, timeout, max_retries, backoff_base):
     candidate = "/redfish/v1/Dell/Systems/System.Embedded.1/DellLCService"
     try:
-        idrac_request(session, base_url, "GET", candidate, timeout=timeout)
+        idrac_request(session, base_url, "GET", candidate, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base)
         return candidate
     except requests.HTTPError:
-        systems = idrac_request(session, base_url, "GET", "/redfish/v1/Systems", timeout=timeout).json()
+        systems = idrac_request(
+            session, base_url, "GET", "/redfish/v1/Systems", timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
+        ).json()
         system_id = systems["Members"][0]["@odata.id"].rstrip("/").rsplit("/", 1)[-1]
         return f"/redfish/v1/Dell/Systems/{system_id}/DellLCService"
 
 
-def print_available_actions(session, base_url, service_path, timeout):
+def print_available_actions(session, base_url, service_path, timeout, max_retries, backoff_base):
     try:
-        svc = idrac_request(session, base_url, "GET", service_path, timeout=timeout).json()
+        svc = idrac_request(
+            session, base_url, "GET", service_path, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
+        ).json()
         actions = svc.get("Actions", {})
         if actions:
             print(f"Actions advertised by {service_path} on this firmware:")
@@ -80,12 +114,14 @@ def print_available_actions(session, base_url, service_path, timeout):
         print(f"Could not re-fetch {service_path} to list its actions: {exc}")
 
 
-def poll_job(session, base_url, job_path, poll_interval, max_wait_minutes, timeout):
+def poll_job(session, base_url, job_path, poll_interval, max_wait_minutes, timeout, max_retries, backoff_base):
     deadline = time.time() + max_wait_minutes * 60
     state = None
     while time.time() < deadline:
         time.sleep(poll_interval)
-        job = idrac_request(session, base_url, "GET", job_path, timeout=timeout).json()
+        job = idrac_request(
+            session, base_url, "GET", job_path, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
+        ).json()
         state = job.get("JobState") or job.get("TaskState")
         pct = job.get("PercentComplete")
         print(f"  Job state: {state} ({pct}%)")
@@ -121,6 +157,20 @@ def main():
         help="Give up waiting after this many minutes; the collection keeps running on the iDRAC regardless (default: 30)",
     )
     parser.add_argument("--timeout", type=int, default=60, help="Per-request timeout in seconds (default: 60)")
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=3,
+        help="Retry a request this many times on a 404/429/5xx or connection error before giving up -- iDRAC's "
+        "embedded Redfish service has been observed returning spurious errors for a resource that works a "
+        "moment earlier/later under sustained request load (default: 3)",
+    )
+    parser.add_argument(
+        "--retry-backoff",
+        type=int,
+        default=2,
+        help="Base seconds for retry backoff, doubling each attempt (2s, 4s, 8s, ...) (default: 2)",
+    )
     args = parser.parse_args()
 
     if not args.username:
@@ -137,7 +187,7 @@ def main():
     job_location = None
     try:
         print(f"Connecting to {args.idrac} ...")
-        lc_service_path = find_dell_lc_service_path(session, base_url, args.timeout)
+        lc_service_path = find_dell_lc_service_path(session, base_url, args.timeout, args.max_retries, args.retry_backoff)
         print(f"Using DellLCService at {lc_service_path}")
 
         try:
@@ -149,6 +199,8 @@ def main():
                 f"{lc_service_path}/Actions/DellLCService.SupportAssistGetEULAStatus",
                 body={},
                 timeout=args.timeout,
+                max_retries=args.max_retries,
+                backoff_base=args.retry_backoff,
             ).json()
             if eula.get("EULAStatus") != "Accepted":
                 print("Accepting SupportAssist EULA ...")
@@ -159,10 +211,12 @@ def main():
                     f"{lc_service_path}/Actions/DellLCService.SupportAssistAcceptEULA",
                     body={},
                     timeout=args.timeout,
+                    max_retries=args.max_retries,
+                    backoff_base=args.retry_backoff,
                 )
         except requests.HTTPError as exc:
             print(f"EULA check/accept failed: {exc}")
-            print_available_actions(session, base_url, lc_service_path, args.timeout)
+            print_available_actions(session, base_url, lc_service_path, args.timeout, args.max_retries, args.retry_backoff)
             raise
 
         print(f"Starting SupportAssist Collection (data: {', '.join(args.data_selector)}) ...")
@@ -175,10 +229,12 @@ def main():
                 f"{lc_service_path}/Actions/DellLCService.SupportAssistCollection",
                 body=collect_body,
                 timeout=args.timeout,
+                max_retries=args.max_retries,
+                backoff_base=args.retry_backoff,
             )
         except requests.HTTPError as exc:
             print(f"SupportAssistCollection call failed: {exc}")
-            print_available_actions(session, base_url, lc_service_path, args.timeout)
+            print_available_actions(session, base_url, lc_service_path, args.timeout, args.max_retries, args.retry_backoff)
             raise
 
         job_location = collect_resp.headers.get("Location")
@@ -189,7 +245,16 @@ def main():
             )
         print(f"Collection job started: {job_location}")
 
-        state = poll_job(session, base_url, job_location, args.poll_interval, args.max_wait_minutes, args.timeout)
+        state = poll_job(
+            session,
+            base_url,
+            job_location,
+            args.poll_interval,
+            args.max_wait_minutes,
+            args.timeout,
+            args.max_retries,
+            args.retry_backoff,
+        )
     except requests.exceptions.Timeout:
         sys.exit(f"Request to {args.idrac} timed out after {args.timeout}s.")
     except requests.exceptions.RequestException as exc:
