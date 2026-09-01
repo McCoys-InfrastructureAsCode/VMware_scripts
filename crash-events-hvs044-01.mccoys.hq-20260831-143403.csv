@@ -1,0 +1,826 @@
+"TimeCreated","LogName","Id","ProviderName","LevelDisplayName","Message","CrashIndicator"
+"8/31/2026 2:33:55 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 2:35:55 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 2:35:56 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 2:48:22 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 2:48:23 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 2:48:23 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 2:50:23 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 2:52:23 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 2:52:23 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 3:06:45 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/31/2026 3:06:45 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/31/2026 3:06:45 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 3:06:46 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 3:06:46 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 3:06:46 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 3:06:48 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/31/2026 3:06:48 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/31/2026 3:07:16 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:16Z. Reason: RulesEngine.","False"
+"8/31/2026 3:07:16 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 3:09:30 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 3:09:31 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 3:09:31 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 3:11:19 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 3:11:19 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 3:11:19 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffff9403595c2080
+P3: 0
+P4: ffff9403595c2080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\082826-16406-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-743562-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b25bfab0-34a5-4bae-94fd-cd00e6388ecd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df2bcffe-7476-4ff5-8672-a4f0b3995803.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f53567f4-a19b-4206-8b93-716194f42390.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9cf2e94-7243-42f4-8ad5-d48ed6f74e24.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_797ccfa6bdfa9fd41ba929d166450b5815fc1_00000000_4e7fe70d-75da-4784-a094-1798611902c2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9c772beb-7385-428a-9276-236fcfed5532
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 3:11:31 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 3:11:46 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 3:13:31 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 3:13:31 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 3:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 3:20:38 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 3:20:38 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 3:20:38 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 3:21:08 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:08Z. Reason: RulesEngine.","False"
+"8/31/2026 3:21:08 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 3:21:39 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 3:30:26 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 3:30:27 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 3:30:27 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 3:30:42 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the stopped state.","False"
+"8/31/2026 3:32:27 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 3:34:27 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 3:34:28 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 3:51:25 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 3:51:25 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 3:51:25 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 3:53:25 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 3:55:25 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 3:55:26 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 4:07:25 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/31/2026 4:07:31 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 4:07:31 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 4:07:31 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 4:08:01 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:52:01Z. Reason: RulesEngine.","False"
+"8/31/2026 4:08:01 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 4:08:51 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\c:\users\administrator\AppData\Local\Microsoft\Windows\usrclass.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 4:10:59 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/31/2026 4:12:25 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 4:12:26 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 4:12:26 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 4:12:58 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 4:12:59 AM","System","7036","Service Control Manager","Information","The Windows Update service entered the running state.","False"
+"8/31/2026 4:13:59 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 4:14:26 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 4:16:26 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 4:16:26 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 4:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 4:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 4:22:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 4:22:26 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/31/2026 4:24:28 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/31/2026 4:27:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 4:32:41 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 4:32:42 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 4:32:42 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 4:34:42 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 4:36:42 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 4:36:42 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 4:53:34 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 4:53:35 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 4:53:35 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 4:55:35 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 4:57:35 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 4:57:36 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 5:15:06 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 5:15:06 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 5:15:06 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 5:17:06 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 5:19:06 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 5:19:07 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 5:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 5:20:38 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 5:20:38 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 5:20:38 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 5:21:08 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:08Z. Reason: RulesEngine.","False"
+"8/31/2026 5:21:08 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 5:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 5:27:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 5:27:25 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/31/2026 5:29:27 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/31/2026 5:29:39 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 5:30:40 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 5:32:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 5:36:18 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 5:36:19 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 5:36:19 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 5:38:19 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 5:38:29 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT253624616391200.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:40:18 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT253738427071900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:40:19 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 5:40:20 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 5:43:37 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT253938005789400.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:45:18 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254038966355900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:46:42 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254123316433300.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:48:01 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254201834590700.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:49:28 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254288686170900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:51:34 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254414830104400.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:52:51 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254491665788600.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:54:57 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254617982219900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:56:01 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 5:56:01 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 5:56:01 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 5:56:17 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254698119187200.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:57:42 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254782319370900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 5:58:02 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 5:59:03 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254863293015500.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 6:00:02 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 6:00:02 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 6:00:26 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT254946190094200.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 6:00:45 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 6:02:01 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT255041182804900.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 6:06:05 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT255284935939000.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 6:07:28 AM","System","16","Microsoft-Windows-Kernel-General","Information","The access history in hive \??\E:\Tanium\Tanium Client\extensions\comply\runtime_support\temp\joval-ce7c381e87bb05749cb21da9\DEFAULT255368618236100.dat was cleared updating 1 keys and creating 1 modified pages.","False"
+"8/31/2026 6:11:45 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.0 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:11 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.1 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:17:12 AM","System","36874","Schannel","Error","An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.
+ The SSPI client process is svchost[TermService] (PID: 1212).","False"
+"8/31/2026 6:19:19 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 6:19:19 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 6:19:19 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 6:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 6:21:19 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 6:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 6:23:19 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 6:23:20 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 6:34:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 6:34:25 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/31/2026 6:36:27 AM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/31/2026 6:39:25 AM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 6:41:17 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 6:41:18 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 6:41:18 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 6:43:18 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 6:45:18 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 6:45:18 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 7:02:01 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 7:02:01 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 7:02:01 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 7:04:02 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 7:06:02 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 7:06:02 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 7:12:21 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 7:12:21 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 7:12:21 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 7:12:21 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 7:12:51 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:51Z. Reason: RulesEngine.","False"
+"8/31/2026 7:12:51 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 7:13:23 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 7:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 7:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 7:22:06 AM","System","7036","Service Control Manager","Information","The Microsoft Account Sign-in Assistant service entered the running state.","False"
+"8/31/2026 7:22:06 AM","System","7036","Service Control Manager","Information","The Client License Service (ClipSVC) service entered the running state.","False"
+"8/31/2026 7:23:08 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 7:23:08 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 7:23:08 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 7:25:06 AM","System","7036","Service Control Manager","Information","The Microsoft Account Sign-in Assistant service entered the stopped state.","False"
+"8/31/2026 7:25:09 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 7:27:06 AM","System","7036","Service Control Manager","Information","The Client License Service (ClipSVC) service entered the stopped state.","False"
+"8/31/2026 7:27:09 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 7:27:09 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 7:34:59 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 7:34:59 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 7:34:59 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffff9403595c2080
+P3: 0
+P4: ffff9403595c2080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\082826-16406-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-743562-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b25bfab0-34a5-4bae-94fd-cd00e6388ecd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df2bcffe-7476-4ff5-8672-a4f0b3995803.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f53567f4-a19b-4206-8b93-716194f42390.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9cf2e94-7243-42f4-8ad5-d48ed6f74e24.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_797ccfa6bdfa9fd41ba929d166450b5815fc1_00000000_4e7fe70d-75da-4784-a094-1798611902c2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9c772beb-7385-428a-9276-236fcfed5532
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 7:43:35 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 7:43:36 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 7:43:36 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 7:45:36 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 7:47:36 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 7:47:36 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 7:50:37 AM","System","1","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (Version 10.0, ?2093?-?04?-?01T20:29:43.000000000Z) unloaded successfully.","False"
+"8/31/2026 7:50:52 AM","System","6","Microsoft-Windows-FilterManager","Information","File System Filter 'FileInfo' (10.0, ?2093?-?04?-?01T20:29:43.000000000Z) has successfully loaded and registered with Filter Manager.","False"
+"8/31/2026 8:05:13 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 8:05:14 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 8:05:14 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 8:07:14 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 8:09:14 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 8:09:14 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 8:18:29 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 8:18:29 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 8:18:29 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 8:18:29 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 8:19:00 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:59Z. Reason: RulesEngine.","False"
+"8/31/2026 8:19:00 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 8:19:30 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 8:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 8:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 8:27:20 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 8:27:21 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 8:27:21 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 8:29:22 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 8:31:22 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 8:31:22 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 8:45:53 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 8:45:53 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 8:45:53 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 8:47:54 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 8:49:54 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 8:49:54 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 9:08:31 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 9:08:32 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 9:08:32 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 9:10:32 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 9:12:32 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 9:12:32 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 9:20:37 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 9:20:38 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 9:20:38 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 9:20:38 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 9:21:08 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:08Z. Reason: RulesEngine.","False"
+"8/31/2026 9:21:08 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 9:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 9:29:49 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 9:29:50 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 9:29:50 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 9:31:50 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 9:33:50 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 9:33:50 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 9:48:09 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 9:48:10 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 9:48:10 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 9:50:10 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 9:52:10 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 9:52:10 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 10:00:58 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 10:01:58 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 10:12:47 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 10:12:48 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 10:12:48 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 10:14:48 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 10:16:48 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 10:16:48 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 10:20:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 10:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 10:33:23 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 10:33:24 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 10:33:24 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 10:35:24 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 10:37:24 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 10:37:24 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 10:49:50 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 10:49:51 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 10:49:51 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 10:51:51 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 10:53:51 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 10:53:51 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 11:15:59 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 11:16:00 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 11:16:00 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 11:18:00 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 11:20:00 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 11:20:01 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 11:20:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 11:20:38 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 11:20:38 AM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 11:20:38 AM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 11:21:08 AM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:08Z. Reason: RulesEngine.","False"
+"8/31/2026 11:21:08 AM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 11:21:38 AM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 11:33:39 AM","System","7036","Service Control Manager","Information","The Microsoft Storage Spaces SMP service entered the running state.","False"
+"8/31/2026 11:33:41 AM","System","7036","Service Control Manager","Information","The Volume Shadow Copy service entered the running state.","False"
+"8/31/2026 11:33:41 AM","System","7036","Service Control Manager","Information","The Microsoft Software Shadow Copy Provider service entered the running state.","False"
+"8/31/2026 11:34:37 AM","Application","26226","Chkdsk","Information","Chkdsk was executed in scan mode on a volume snapshot.  
+
+Checking file system on C:
+Volume label is Windows.
+
+Stage 1: Examining basic file system structure ...
+  195072 file records processed.                                                        
+File verification completed.
+ Phase duration (File record verification): 11.73 seconds.
+  18236 large file records processed.                                   
+ Phase duration (Orphan file record recovery): 5.80 milliseconds.
+  0 bad file records processed.                                     
+ Phase duration (Bad file record checking): 0.06 milliseconds.
+
+Stage 2: Examining file name linkage ...
+  27667 reparse records processed.                                      
+  262658 index entries processed.                                                       
+Index verification completed.
+ Phase duration (Index verification): 38.97 seconds.
+
+ Phase duration (Orphan reconnection): 52.83 milliseconds.
+
+ Phase duration (Orphan recovery to lost and found): 0.11 milliseconds.
+  27667 reparse records processed.                                      
+ Phase duration (Reparse point and Object ID verification): 43.73 milliseconds.
+
+Stage 3: Examining security descriptors ...
+Security descriptor verification completed.
+ Phase duration (Security descriptor verification): 60.28 milliseconds.
+  33794 data files processed.                                           
+ Phase duration (Data attribute verification): 0.07 milliseconds.
+CHKDSK is verifying Usn Journal...
+  33747864 USN bytes processed.                                                           
+Usn Journal verification completed.
+ Phase duration (USN journal verification): 570.90 milliseconds.
+
+Windows has scanned the file system and found no problems.
+No further action is required.
+
+ 244141055 KB total disk space.
+  17691448 KB in 85993 files.
+     85488 KB in 33795 indexes.
+    312539 KB in use by the system.
+     65536 KB occupied by the log file.
+ 226051580 KB available on disk.
+
+      4096 bytes in each allocation unit.
+  61035263 total allocation units on disk.
+  56512895 allocation units available on disk.
+Total duration: 51.45 seconds (51452 ms).
+
+----------------------------------------------------------------------
+
+
+Stage 1: Examining basic file system structure ...
+
+Stage 2: Examining file name linkage ...
+
+Stage 3: Examining security descriptors ...
+","False"
+"8/31/2026 11:36:35 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 11:36:36 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 11:36:36 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 11:37:37 AM","System","7036","Service Control Manager","Information","The Volume Shadow Copy service entered the stopped state.","False"
+"8/31/2026 11:37:37 AM","Application","8224","VSS","Information","The VSS service is shutting down due to idle timeout. ","False"
+"8/31/2026 11:38:36 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 11:40:36 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 11:40:36 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 11:40:37 AM","System","7036","Service Control Manager","Information","The Microsoft Software Shadow Copy Provider service entered the stopped state.","False"
+"8/31/2026 11:53:16 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffa005cd605080
+P3: 0
+P4: ffffa005cd605080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-18171-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-485718-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.0730e035-97e9-4047-a99d-456c0d6235ac.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.afca3e08-eee7-4f66-a661-43524f808af3.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.82aaec66-a9d6-4f4b-a7c1-2919928ba890.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.2acce1a1-33b1-475c-9b77-30b96a778a65.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_41c68ca4a8b26ced9e699f199885777f6caba52d_00000000_5c3a8420-5b69-46d8-b1ae-55350f99a58d
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 75c47e14-c484-4f32-baa7-c3e3c1b65ef1
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 11:53:16 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffffe307e261b080
+P3: 0
+P4: ffffe307e261b080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\071626-13343-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-537781-0.sysdata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f120239f-7406-4d61-95cd-7fff6a0a9186.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.894645b0-52f6-4e18-ad81-8298c63bb703.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.71f9269b-6fea-464c-ac49-5faa10905e91.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.5db28187-8018-494f-a099-2f35839b7505.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_5c7f746e260f0d97c87a4ffeafece76315b37c7_00000000_e443a390-1b15-44af-b646-f5c7b9a5bd72
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2e1fddb6-2bbf-4acb-ad64-67baa2f016cc
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 11:53:16 AM","Application","1001","Windows Error Reporting","Information","Fault bucket , type 0
+Event Name: BlueScreen
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ef
+P2: ffff9403595c2080
+P3: 0
+P4: ffff9403595c2080
+P5: 0
+P6: 10_0_26100
+P7: 0_0
+P8: 272_3
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\WINDOWS\Minidump\082826-16406-01.dmp
+\\?\C:\WINDOWS\SystemTemp\WER-743562-0.sysdata.xml
+\\?\C:\WINDOWS\MEMORY.DMP
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.b25bfab0-34a5-4bae-94fd-cd00e6388ecd.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.df2bcffe-7476-4ff5-8672-a4f0b3995803.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.f53567f4-a19b-4206-8b93-716194f42390.tmp.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER.e9cf2e94-7243-42f4-8ad5-d48ed6f74e24.tmp.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_ef_797ccfa6bdfa9fd41ba929d166450b5815fc1_00000000_4e7fe70d-75da-4784-a094-1798611902c2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9c772beb-7385-428a-9276-236fcfed5532
+Report Status: 2049
+Hashed bucket: 
+Cab Guid: 0","True"
+"8/31/2026 11:54:37 AM","System","7036","Service Control Manager","Information","The Microsoft Storage Spaces SMP service entered the stopped state.","False"
+"8/31/2026 11:59:54 AM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 11:59:56 AM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 11:59:56 AM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 12:00:00 PM","System","6013","EventLog","Information","The system uptime is 276508 seconds.","True"
+"8/31/2026 12:01:56 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 12:03:56 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 12:03:56 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 12:14:03 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 12:15:03 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 12:20:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 12:21:36 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 12:21:36 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 12:21:36 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 12:21:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 12:23:36 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 12:25:36 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 12:25:37 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 12:38:47 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 12:38:49 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 12:38:49 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 12:40:49 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 12:42:20 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the running state.","False"
+"8/31/2026 12:42:21 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the running state.","False"
+"8/31/2026 12:42:49 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 12:42:50 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 12:44:22 PM","System","7036","Service Control Manager","Information","The Windows Modules Installer service entered the stopped state.","False"
+"8/31/2026 12:47:20 PM","System","7036","Service Control Manager","Information","The AppX Deployment Service (AppXSVC) service entered the stopped state.","False"
+"8/31/2026 1:03:54 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 1:03:54 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 1:03:54 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 1:05:54 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 1:07:54 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 1:07:55 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 1:20:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 1:20:38 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the running state.","False"
+"8/31/2026 1:20:38 PM","Application","16394","Microsoft-Windows-Security-SPP","Information","Offline downlevel migration succeeded.","False"
+"8/31/2026 1:20:38 PM","Application","16389","Microsoft-Windows-Security-SPP","Information","Grace timer has expired. Hr = 0xC004D30B","False"
+"8/31/2026 1:21:08 PM","Application","16384","Microsoft-Windows-Security-SPP","Information","Successfully scheduled Software Protection service for re-start at 2026-09-02T20:51:08Z. Reason: RulesEngine.","False"
+"8/31/2026 1:21:08 PM","System","7036","Service Control Manager","Information","The Software Protection service entered the stopped state.","False"
+"8/31/2026 1:21:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 1:24:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 1:24:59 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 1:24:59 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 1:27:00 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 1:29:00 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 1:29:00 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 1:45:57 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 1:45:58 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 1:45:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 1:47:58 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 1:49:58 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 1:49:58 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 2:07:29 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 2:07:29 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 2:07:29 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 2:09:30 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 2:11:30 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 2:11:30 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"
+"8/31/2026 2:20:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the running state.","False"
+"8/31/2026 2:21:38 PM","System","7036","Service Control Manager","Information","The WaaSMedicSvc service entered the stopped state.","False"
+"8/31/2026 2:27:06 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","False"
+"8/31/2026 2:27:06 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the running state.","False"
+"8/31/2026 2:27:06 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the running state.","False"
+"8/31/2026 2:29:06 PM","System","7036","Service Control Manager","Information","The WMI Performance Adapter service entered the stopped state.","False"
+"8/31/2026 2:31:07 PM","System","7040","Service Control Manager","Information","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","False"
+"8/31/2026 2:31:07 PM","System","7036","Service Control Manager","Information","The Background Intelligent Transfer Service service entered the stopped state.","False"

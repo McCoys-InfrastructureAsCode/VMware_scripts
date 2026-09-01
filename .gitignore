@@ -1,0 +1,4 @@
+# Copied memory dumps and downloaded debug symbols -- can be huge, never commit
+/dumps/
+/symbols/
+*.dmp

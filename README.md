@@ -9,11 +9,17 @@ Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
   drill-down: finds the host's actual last boot time, auto-selects a
   window around it, and detects the logging gap that likely brackets the
   actual downtime.
+- [Get-CrashDumpAnalysis.ps1](#get-crashdumpanalysisps1) -- pulls the
+  memory dump from a bugcheck and runs an automated `!analyze -v` against
+  it, to identify the actual process/driver behind the crash.
 
 Typical crash/reboot workflow: run `Get-CrashWindowEvents.ps1` first for a
 broad look at what happened, then `Get-CrashRootCause.ps1` to narrow in on
 the likely cause and downtime window -- both run over WinRM, so you don't
-need iDRAC or vSphere console access for this kind of triage.
+need iDRAC or vSphere console access for this kind of triage. If a
+bugcheck (`WER-SystemErrorReporting` event `1001`) turns up and a dump was
+saved, run `Get-CrashDumpAnalysis.ps1` next to pin down the actual culprit
+process/driver rather than just the bugcheck code.
 
 ## Execution policy
 
@@ -162,3 +168,73 @@ Or pin your own explicit window, same as the other script:
 - A highlighted "Possible crash/reboot/hardware indicators" table.
 - The full event table for the window.
 - A CSV file with the full, untruncated event set for further review.
+
+## Get-CrashDumpAnalysis.ps1
+
+Pulls a memory dump (default `C:\Windows\MEMORY.DMP`) from the target host
+over WinRM and runs an automated `cdb.exe -c "!analyze -v"` against it --
+the same analysis WinDbg would give you, without needing console/RDP
+access to the host. Useful once `Get-CrashWindowEvents.ps1` /
+`Get-CrashRootCause.ps1` have shown a bugcheck (`WER-SystemErrorReporting`
+event `1001`) and you want to know the actual process or driver behind it
+(e.g. *which* process died behind a `0xEF CRITICAL_PROCESS_DIED`), not
+just the bugcheck code.
+
+Designed to be re-run: each run copies the dump to its own timestamped
+file under `.\dumps\` (gitignored -- dumps can be huge), and caches
+downloaded symbols under `.\symbols\` so repeat analyses don't
+re-download them every time.
+
+### Prerequisites
+
+- Same WinRM reachability as the other scripts.
+- **`cdb.exe`** ("Debugging Tools for Windows") installed locally --
+  install the Windows SDK and select just the "Debugging Tools for
+  Windows" component, or point `-CdbPath` at an existing install. The
+  script auto-detects common install locations and PATH.
+- Outbound internet access to `https://msdl.microsoft.com` (Microsoft's
+  public symbol server) for the first analysis of a given bugcheck --
+  subsequent runs reuse the local symbol cache.
+
+### Usage
+
+```powershell
+.\Get-CrashDumpAnalysis.ps1 -ComputerName hvs044-01.mccoys.hq
+```
+
+Point at a specific minidump instead of the default full/kernel dump:
+
+```powershell
+.\Get-CrashDumpAnalysis.ps1 -ComputerName hvs044-01.mccoys.hq -DumpPath 'C:\Windows\Minidump\082826-12345-01.dmp'
+```
+
+Keep the copied dump around afterward (e.g. to open it in WinDbg's GUI):
+
+```powershell
+.\Get-CrashDumpAnalysis.ps1 -ComputerName hvs044-01.mccoys.hq -KeepLocalDump
+```
+
+### Parameters
+
+| Parameter            | Required | Description |
+|------------------------|----------|-------------|
+| `-ComputerName`       | No       | FQDN or hostname of the target machine. Prompted for if omitted. |
+| `-Credential`         | No       | `PSCredential` for the target machine. Prompted for (username/password, console-based) if omitted. |
+| `-DumpPath`           | No       | Path to the dump file on the remote host. Defaults to `C:\Windows\MEMORY.DMP`. |
+| `-LocalDumpDir`       | No       | Local folder the dump is copied into. Defaults to `.\dumps`. |
+| `-CdbPath`            | No       | Path to `cdb.exe`. Auto-detected if omitted. |
+| `-SymbolCachePath`    | No       | Local folder used to cache downloaded symbols across runs. Defaults to `.\symbols`. |
+| `-SymbolServer`       | No       | Symbol server URL. Defaults to Microsoft's public symbol server. |
+| `-OutputPath`         | No       | Path for the full `!analyze -v` text output. Defaults to `.\crash-dump-analysis-<ComputerName>-<timestamp>.txt`. |
+| `-KeepLocalDump`      | No       | Switch. Keep the copied `.dmp` after analysis instead of deleting it. |
+
+### Output
+
+- A highlighted "Bugcheck analysis highlights" section in the console --
+  the bucketed fields `!analyze -v` reports (e.g. `PROCESS_NAME`,
+  `FAILURE_BUCKET_ID`, `BUGCHECK_STR`).
+- A text file with the full, untruncated `!analyze -v` output for further
+  review.
+- The copied `.dmp` is deleted after analysis unless `-KeepLocalDump` is
+  passed (dumps can be large; both `.\dumps\` and `.\symbols\` are
+  gitignored).
