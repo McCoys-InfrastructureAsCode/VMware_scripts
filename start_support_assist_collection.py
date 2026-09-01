@@ -88,16 +88,32 @@ def idrac_request(session, base_url, method, path, body=None, timeout=60, max_re
 
 
 def find_dell_lc_service_path(session, base_url, timeout, max_retries, backoff_base):
-    candidate = "/redfish/v1/Dell/Systems/System.Embedded.1/DellLCService"
-    try:
-        idrac_request(session, base_url, "GET", candidate, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base)
-        return candidate
-    except requests.HTTPError:
-        systems = idrac_request(
-            session, base_url, "GET", "/redfish/v1/Systems", timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
-        ).json()
-        system_id = systems["Members"][0]["@odata.id"].rstrip("/").rsplit("/", 1)[-1]
-        return f"/redfish/v1/Dell/Systems/{system_id}/DellLCService"
+    """Follow the Manager resource's own advertised Links.Oem.Dell.DellLCService
+    link rather than guessing a URL -- confirmed (via a manual Redfish dump
+    against a 16G PowerEdge) to live under Managers/<id>/Oem/Dell/DellLCService,
+    not under Systems/<id> as older docs/examples for this API often show."""
+    managers = idrac_request(
+        session, base_url, "GET", "/redfish/v1/Managers", timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
+    ).json()
+    manager_id = managers["Members"][0]["@odata.id"].rstrip("/").rsplit("/", 1)[-1]
+    manager = idrac_request(
+        session,
+        base_url,
+        "GET",
+        f"/redfish/v1/Managers/{manager_id}",
+        timeout=timeout,
+        max_retries=max_retries,
+        backoff_base=backoff_base,
+    ).json()
+    dell_links = ((manager.get("Links") or {}).get("Oem") or {}).get("Dell") or {}
+    lc_service = dell_links.get("DellLCService")
+    if not lc_service or "@odata.id" not in lc_service:
+        raise RuntimeError(
+            f"DellLCService link not found under Managers/{manager_id}/Links/Oem/Dell on this firmware -- "
+            "SupportAssist Collection may not be exposed the way this script expects. Available Dell OEM "
+            f"links there: {', '.join(dell_links.keys()) or '(none)'}"
+        )
+    return lc_service["@odata.id"]
 
 
 def print_available_actions(session, base_url, service_path, timeout, max_retries, backoff_base):

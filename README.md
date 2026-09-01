@@ -363,19 +363,22 @@ you set one up later, add `ShareType`/`IPAddress`/`ShareName`/`Username`/
 `Password` fields to `COLLECT_BODY` in the script to export there
 directly instead of downloading by hand.
 
-Exact Redfish action names/payload fields for SupportAssist have shifted
-a bit across iDRAC9 firmware revisions. If a call keeps 404ing after
-retries are exhausted, the script fetches `DellLCService`'s actual
-advertised `Actions` and prints them, so you can see what this firmware
-really calls things instead of guessing blind.
+The `DellLCService` location itself is **discovered, not guessed**: the
+script follows the Manager resource's own advertised
+`Links.Oem.Dell.DellLCService` link. An earlier version hardcoded a
+`Systems/<id>`-rooted URL (the shape shown in most SupportAssist
+Redfish examples), which consistently 404'd -- confirmed via a manual
+Redfish dump against the actual hardware (a 16G PowerEdge) that
+`DellLCService` in fact lives under `Managers/<id>/Oem/Dell/DellLCService`
+on this platform generation, not under `Systems/<id>`. Exact Redfish
+action names under it can still shift across firmware revisions, so if a
+call 404s after retries, the script fetches `DellLCService`'s actual
+advertised `Actions` and prints them.
 
-Every request retries with backoff (`--max-retries`/`--retry-backoff`) on
-a 404/429/5xx or connection error before giving up -- iDRAC's embedded
-Redfish service has been observed returning a spurious error for a
-resource that works fine a moment earlier or later under sustained
-request load (confirmed on this host: the same `DellLCService` path
-succeeded, then 404'd on the very next call, while the SupportAssist page
-loaded fine in the web UI the whole time).
+Every request also retries with backoff (`--max-retries`/`--retry-backoff`)
+on a 404/429/5xx or connection error before giving up -- iDRAC's embedded
+Redfish service is a fairly resource-constrained daemon and cheap
+insurance against transient hiccups under sustained request load.
 
 ### Prerequisites
 
