@@ -37,6 +37,7 @@ never pass the password on the command line.
 
 import argparse
 import getpass
+import json
 import sys
 import time
 
@@ -116,16 +117,35 @@ def find_dell_lc_service_path(session, base_url, timeout, max_retries, backoff_b
     return lc_service["@odata.id"]
 
 
-def print_available_actions(session, base_url, service_path, timeout, max_retries, backoff_base):
+def print_available_actions(session, base_url, service_path, timeout, max_retries, backoff_base, action_name=None):
+    """Print the full advertised Actions block (or one action's full
+    definition if action_name is given), including any inline
+    <Param>@Redfish.AllowableValues hints, and follow an @Redfish.ActionInfo
+    link if present -- that's the authoritative parameter schema when the
+    action definition itself doesn't spell out required fields."""
     try:
         svc = idrac_request(
             session, base_url, "GET", service_path, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
         ).json()
         actions = svc.get("Actions", {})
-        if actions:
-            print(f"Actions advertised by {service_path} on this firmware:")
-            for name in actions:
-                print(f"  {name}")
+        if not actions:
+            return
+        if action_name:
+            match = next((v for k, v in actions.items() if action_name in k), None)
+            actions = {action_name: match} if match else actions
+        print(f"Action definition(s) from {service_path}:")
+        print(json.dumps(actions, indent=2))
+        for action_def in actions.values():
+            if isinstance(action_def, dict) and "@Redfish.ActionInfo" in action_def:
+                info_path = action_def["@Redfish.ActionInfo"]
+                try:
+                    info = idrac_request(
+                        session, base_url, "GET", info_path, timeout=timeout, max_retries=max_retries, backoff_base=backoff_base
+                    ).json()
+                    print(f"ActionInfo from {info_path}:")
+                    print(json.dumps(info, indent=2))
+                except requests.RequestException as exc:
+                    print(f"Could not fetch ActionInfo at {info_path}: {exc}")
     except requests.RequestException as exc:
         print(f"Could not re-fetch {service_path} to list its actions: {exc}")
 
@@ -232,7 +252,15 @@ def main():
                 )
         except requests.HTTPError as exc:
             print(f"EULA check/accept failed: {exc}")
-            print_available_actions(session, base_url, lc_service_path, args.timeout, args.max_retries, args.retry_backoff)
+            print_available_actions(
+                session,
+                base_url,
+                lc_service_path,
+                args.timeout,
+                args.max_retries,
+                args.retry_backoff,
+                action_name="SupportAssistAcceptEULA",
+            )
             raise
 
         print(f"Starting SupportAssist Collection (data: {', '.join(args.data_selector)}) ...")
@@ -250,7 +278,15 @@ def main():
             )
         except requests.HTTPError as exc:
             print(f"SupportAssistCollection call failed: {exc}")
-            print_available_actions(session, base_url, lc_service_path, args.timeout, args.max_retries, args.retry_backoff)
+            print_available_actions(
+                session,
+                base_url,
+                lc_service_path,
+                args.timeout,
+                args.max_retries,
+                args.retry_backoff,
+                action_name="SupportAssistCollection",
+            )
             raise
 
         job_location = collect_resp.headers.get("Location")
