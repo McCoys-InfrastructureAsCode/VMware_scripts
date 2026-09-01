@@ -303,7 +303,7 @@ python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --since-days
 | Argument         | Required | Description |
 |-------------------|----------|-------------|
 | `--idrac`         | Yes      | iDRAC hostname or IP. |
-| `--username`      | No       | iDRAC account. Defaults to `root`. Password is always prompted for interactively -- never pass it on the command line. |
+| `--username`      | No       | iDRAC account. Prompted for if omitted (blank input defaults to `root`). Password is always prompted for interactively -- never pass it on the command line. |
 | `--insecure`      | No       | Skip TLS certificate verification (for iDRACs with self-signed certs). |
 | `--since-days`    | No       | Only include log entries from the last N days. Defaults to `30`. |
 | `--output-dir`    | No       | Directory to write the full JSON report into. Defaults to the current directory. |

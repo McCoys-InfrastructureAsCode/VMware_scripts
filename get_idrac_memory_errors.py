@@ -9,8 +9,9 @@ Requires: pip install requests
 Usage:
     python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq
 
-Never pass the password on the command line -- it's always prompted for
-interactively (use --username to change the account, default 'root').
+Username and password are always prompted for interactively if not
+supplied via --username (default 'root' if left blank at the prompt) --
+never pass the password on the command line.
 """
 
 import argparse
@@ -122,7 +123,7 @@ def main():
         description="Pull DIMM health/ECC error info and memory-related log entries from a Dell iDRAC9 via Redfish."
     )
     parser.add_argument("--idrac", required=True, help="iDRAC hostname or IP")
-    parser.add_argument("--username", default="root", help="iDRAC username (default: root)")
+    parser.add_argument("--username", default=None, help="iDRAC username. Prompted for if omitted (default: root)")
     parser.add_argument(
         "--insecure",
         action="store_true",
@@ -141,6 +142,8 @@ def main():
     )
     args = parser.parse_args()
 
+    if not args.username:
+        args.username = input(f"Username for {args.idrac} (default: root): ") or "root"
     password = getpass.getpass(f"Password for {args.username}@{args.idrac}: ")
     base_url = f"https://{args.idrac}"
 
