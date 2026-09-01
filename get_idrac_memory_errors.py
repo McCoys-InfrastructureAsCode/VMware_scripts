@@ -67,10 +67,23 @@ def extract_error_fields(obj, prefix=""):
     return found
 
 
+def get_collection_members(session, base_url, collection_path, timeout=60):
+    """Fetch every Member of a Redfish collection, following
+    Members@odata.nextLink pagination -- some iDRAC collections (e.g.
+    Memory with many DIMMs) can span more than one page."""
+    members = []
+    path = collection_path
+    while path:
+        data = get_json(session, base_url, path, timeout=timeout)
+        members.extend(data.get("Members", []))
+        path = data.get("Members@odata.nextLink") or data.get("@odata.nextLink")
+    return members
+
+
 def get_memory_inventory(session, base_url, system_id, timeout=60):
-    data = get_json(session, base_url, f"/redfish/v1/Systems/{system_id}/Memory", timeout=timeout)
+    members = get_collection_members(session, base_url, f"/redfish/v1/Systems/{system_id}/Memory", timeout=timeout)
     dimms = []
-    for member in data.get("Members", []):
+    for member in members:
         dimm_path = member["@odata.id"]
         dimm = get_json(session, base_url, dimm_path, timeout=timeout)
         entry = {
@@ -200,6 +213,9 @@ def main():
         print("Pulling DIMM inventory and per-DIMM memory metrics ...")
         dimms = get_memory_inventory(session, base_url, system_id, timeout=args.timeout)
 
+        system = get_json(session, base_url, f"/redfish/v1/Systems/{system_id}", timeout=args.timeout)
+        reported_total_gib = (system.get("MemorySummary") or {}).get("TotalSystemMemoryGiB")
+
         since = datetime.now(timezone.utc) - timedelta(days=args.since_days)
 
         print("Discovering log services ...")
@@ -236,7 +252,7 @@ def main():
 
     memory_entries = filter_memory_related(all_entries)
 
-    print("\n=== DIMM health ===")
+    print(f"\n=== DIMM health ({len(dimms)} DIMM(s) enumerated) ===")
     unhealthy = []
     for d in dimms:
         health = d["Health"]
@@ -247,6 +263,18 @@ def main():
         print(f"  {d['Name']!s:<12} Health={health!s:<10} State={d['State']!s:<10} {d['CapacityMiB']} MiB{flag}")
         for k, v in d["ErrorFields"].items():
             print(f"      {k}: {v}")
+
+    enumerated_gib = sum((d.get("CapacityMiB") or 0) for d in dimms) / 1024
+    if reported_total_gib is not None:
+        if abs(enumerated_gib - reported_total_gib) > 1:
+            print(
+                f"\nWARNING: enumerated DIMMs total {enumerated_gib:.0f} GiB, but the system "
+                f"reports {reported_total_gib} GiB installed. Some DIMM(s) may be missing from "
+                "this report, or actually missing/failed in the hardware -- check the web UI's "
+                "System > Memory page directly to confirm which."
+            )
+        else:
+            print(f"\nEnumerated DIMM capacity ({enumerated_gib:.0f} GiB) matches system-reported total memory.")
 
     if unhealthy:
         print(f"\n{len(unhealthy)} DIMM(s) reporting non-OK health -- see above.")
@@ -268,6 +296,8 @@ def main():
         "generated": datetime.now(timezone.utc).isoformat(),
         "since_days": args.since_days,
         "log_services_found": [svc["name"] or svc["id"] for svc in log_services],
+        "reported_total_system_memory_gib": reported_total_gib,
+        "enumerated_dimm_capacity_gib": enumerated_gib,
         "dimms": dimms,
         "memory_entries": memory_entries,
     }

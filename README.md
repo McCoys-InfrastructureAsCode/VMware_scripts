@@ -321,7 +321,11 @@ python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --since-days
 
 - Console summary: each DIMM's `Health`/`State`/capacity, flagging any
   that aren't `Health=OK`, plus any ECC/error-related fields found in its
-  `MemoryMetrics`.
+  `MemoryMetrics`. DIMM enumeration follows Redfish collection pagination
+  (`Members@odata.nextLink`), and the total enumerated capacity is cross-
+  checked against the system's own reported `MemorySummary.TotalSystemMemoryGiB`
+  -- a mismatch is flagged as a warning, since it can mean either an
+  enumeration gap or an actually missing/failed DIMM.
 - Console listing of every discovered log service's entries (within
   `--since-days`) that mention memory/DIMM/ECC/correctable, tagged with
   which log service each came from.
