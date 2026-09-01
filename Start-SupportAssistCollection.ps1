@@ -90,9 +90,28 @@ if (-not $Credential) {
     $Credential = New-Object System.Management.Automation.PSCredential($username, $securePassword)
 }
 
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12
+
 $prevCertCallback = [Net.ServicePointManager]::ServerCertificateValidationCallback
+$prevCertPolicy = [Net.ServicePointManager]::CertificatePolicy
 if ($Insecure) {
+    # ServerCertificateValidationCallback alone doesn't reliably suppress
+    # self-signed-cert handshake failures in Windows PowerShell (.NET
+    # Framework) -- surfaces as a generic "underlying connection was
+    # closed: An unexpected error occurred on a send". The older
+    # ICertificatePolicy override is the more reliable bypass here.
+    if (-not ('TrustAllCertsPolicy' -as [type])) {
+        Add-Type @"
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+public class TrustAllCertsPolicy : ICertificatePolicy {
+    public bool CheckValidationResult(ServicePoint sp, X509Certificate cert, WebRequest req, int problem) {
+        return true;
+    }
+}
+"@
+    }
+    [Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
     [Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
 }
 
@@ -214,4 +233,5 @@ try {
 }
 finally {
     [Net.ServicePointManager]::ServerCertificateValidationCallback = $prevCertCallback
+    [Net.ServicePointManager]::CertificatePolicy = $prevCertPolicy
 }
