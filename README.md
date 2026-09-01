@@ -15,7 +15,7 @@ Scripts for pulling crash/reboot troubleshooting data from Windows hosts.
 - [get_idrac_memory_errors.py](#get_idrac_memory_errorspy) -- pulls DIMM
   health and memory-related log entries from a Dell iDRAC9 over Redfish,
   to check for hardware ECC errors independently of the OS.
-- [Start-SupportAssistCollection.ps1](#start-supportassistcollectionps1)
+- [start_support_assist_collection.py](#start_support_assist_collectionpy)
   -- triggers a Dell SupportAssist Collection bundle on an iDRAC9 and
   waits for it to finish, for a broader hardware/firmware-level diagnostic
   cross-check.
@@ -334,7 +334,7 @@ python get_idrac_memory_errors.py --idrac idrac-hvs044-01.mccoys.hq --since-days
   matched log entries, for cases where the console summary doesn't
   surface what you need.
 
-## Start-SupportAssistCollection.ps1
+## start_support_assist_collection.py
 
 Triggers a Dell SupportAssist Collection on an iDRAC9 over Redfish and
 polls it to completion, so you don't have to babysit the web UI for the
@@ -343,14 +343,25 @@ inventory, the Lifecycle Log, System Event Log, TTY log, and (optionally)
 OS-level data into one `.zip` -- a broader cross-check alongside
 `Get-CrashDumpAnalysis.ps1` and `get_idrac_memory_errors.py`.
 
+Python rather than PowerShell here deliberately: an earlier PowerShell
+version (`Invoke-WebRequest`/.NET's `HttpWebRequest`) hit a reproducible
+`"underlying connection was closed: An unexpected error occurred on a
+send"` against this iDRAC's embedded web server, surviving three
+different mitigations (cert-validation bypass, broadened TLS versions,
+preemptive Basic Auth + disabled keep-alive). `curl.exe` and Python's
+`requests` both worked against the same host on the first try, pointing
+at a specific .NET-vs-embedded-server incompatibility rather than a
+config problem -- so this uses the same `requests`-based approach as
+`get_idrac_memory_errors.py`.
+
 **Without a network share configured, this script stops at "collection
 complete"** and tells you to download the bundle manually from the web UI
 (`Maintenance > SupportAssist > SupportAssist Collections`). Dell doesn't
 expose a documented, stable API path to pull a bundle that's stored
 locally on the iDRAC -- only to push it to a CIFS/NFS/HTTP(S) share. If
-you set one up later, extend the `$collectBody` hashtable in the script
-with `ShareType`/`IPAddress`/`ShareName`/`Username`/`Password` to export
-there directly instead of downloading by hand.
+you set one up later, add `ShareType`/`IPAddress`/`ShareName`/`Username`/
+`Password` fields to `COLLECT_BODY` in the script to export there
+directly instead of downloading by hand.
 
 Exact Redfish action names/payload fields for SupportAssist have shifted
 a bit across iDRAC9 firmware revisions. If a call 404s, the script
@@ -360,6 +371,7 @@ blind.
 
 ### Prerequisites
 
+- Python 3 with the `requests` package (`pip install requests`).
 - Same network reachability as `get_idrac_memory_errors.py` (HTTPS, port
   443, to the iDRAC).
 - An iDRAC account with rights to run SupportAssist operations (the
@@ -368,26 +380,27 @@ blind.
 ### Usage
 
 ```powershell
-.\Start-SupportAssistCollection.ps1 -IDRAC 10.200.44.133 -Insecure
+python start_support_assist_collection.py --idrac 10.200.44.133 --insecure
 ```
 
 Include OS-level data too (may need extra OS credential fields this
-script doesn't currently set -- see the script's `.DESCRIPTION`):
+script doesn't currently set):
 
 ```powershell
-.\Start-SupportAssistCollection.ps1 -IDRAC 10.200.44.133 -Insecure -DataSelector HWData,TTYLogData,TelemetryReports,OSAppData
+python start_support_assist_collection.py --idrac 10.200.44.133 --insecure --data-selector HWData TTYLogData TelemetryReports OSAppData
 ```
 
 ### Parameters
 
-| Parameter            | Required | Description |
+| Argument              | Required | Description |
 |------------------------|----------|-------------|
-| `-IDRAC`              | No       | iDRAC hostname or IP. Prompted for if omitted. |
-| `-Credential`         | No       | `PSCredential` for the iDRAC. Prompted for (username/password, console-based) if omitted. |
-| `-Insecure`           | No       | Switch. Skip TLS certificate verification (for iDRACs with self-signed certs). |
-| `-DataSelector`       | No       | Which data types to collect. Defaults to `HWData`, `TTYLogData`, `TelemetryReports`. |
-| `-PollIntervalSec`    | No       | Seconds between job status checks. Defaults to `15`. |
-| `-MaxWaitMinutes`     | No       | Give up waiting after this many minutes (the collection keeps running on the iDRAC regardless). Defaults to `30`. |
+| `--idrac`             | Yes      | iDRAC hostname or IP. |
+| `--username`          | No       | iDRAC account. Prompted for if omitted (blank input defaults to `root`). Password is always prompted for interactively -- never pass it on the command line. |
+| `--insecure`          | No       | Skip TLS certificate verification (for iDRACs with self-signed certs). |
+| `--data-selector`     | No       | Which data types to collect (space-separated). Defaults to `HWData TTYLogData TelemetryReports`. |
+| `--poll-interval`     | No       | Seconds between job status checks. Defaults to `15`. |
+| `--max-wait-minutes`  | No       | Give up waiting after this many minutes (the collection keeps running on the iDRAC regardless). Defaults to `30`. |
+| `--timeout`           | No       | Per-request timeout in seconds. Defaults to `60`. |
 
 ### Output
 
